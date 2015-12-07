@@ -149,24 +149,25 @@ Introduction
 - Grew out of work in AI
 - New capability for computers
 
-Examples:
-    - Database mining
-        - Large datasets from grouth of automation/web
-        - E.g.:
-            - Web click data
-            - Medical records
-            - Biology
-            - Engineering
-    - Applications can't program by hand.
-        - E.g.:
-            - Autonomous helicopter
-            - Handwriting recognition
-            - Most of Natural Language Processing (NLP)
-            - Computer Vision
-    - Self-customisation programs
-        - E.g.:
-            - Amazon, Netflix product recommendations
-    - Understanding human learning (brain, real AI)
+##### Examples:
+
+- Database mining
+    - Large datasets from grouth of automation/web
+    - E.g.:
+        - Web click data
+        - Medical records
+        - Biology
+        - Engineering
+- Applications can't program by hand.
+    - E.g.:
+        - Autonomous helicopter
+        - Handwriting recognition
+        - Most of Natural Language Processing (NLP)
+        - Computer Vision
+- Self-customisation programs
+    - E.g.:
+        - Amazon, Netflix product recommendations
+- Understanding human learning (brain, real AI)
 
 ### How to Use Discussion Forums
 
