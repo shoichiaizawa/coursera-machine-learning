@@ -7,9 +7,13 @@ Machine Learning - Stanford University, instructed by Andrew Ng
 
 This is my note repository for [Machine Learning - Stanford University](https://www.coursera.org/learn/machine-learning) course offered at [Coursera.org](https://www.coursera.org/). The notes are currently being used for the session between **2015-11-30** and **2016-02-22**.
 
-At this time, the notes are very disorganised, as in a large part of texts are very exact copy (but typed by me) of the original ones shown by Professor Ng -- I will try to summarise all this as much as possible whenever I can.
+At this time, the notes are very disorganised, as in the large part of the text is very exact copy (but typed by me) of the original one given by Professor Ng and other Coursera community members -- I will try to summarise all this as much as possible whenever I can.
 
-My goal for this repository is, likewise other learners of this course I came across on the internet, to implement the course materials taught using Octave/MATLAB in a different programing language -- **Python** will probably be my language of choice.
+### My objective for this course
+
+I decided to take this course as a paid course so my minimum objective for this course is to complete the course successfully within the given time frame; this includes submitting every assignments by the due date.
+
+My goal for this course is, likewise other learners of this course I came across on the internet, to implement the course materials taught using Octave/MATLAB into a different programing language -- **Python** will probably be my language of choice –– after the course completion.
 
 ### Terms of Use for Coursera.org
 
@@ -107,15 +111,15 @@ Week 1: Introduction
 Environment Setup Instructions
 ------------------------------
 
-The assignments of this course requires GNU Octave or MathWorks MATLAB. I chose Octave because it is open-sourced. MATLAB is licensed software, the course takers given free access but this only lasts 120 days.
+The assignments of this course requires [GNU Octave](https://www.gnu.org/software/octave/) or [MathWorks MATLAB](http://uk.mathworks.com/products/matlab/). I chose Octave because it is open-sourced. MATLAB is licensed software, the course takers given free access but this is only valid for 120 days.
 
 ### Installing Octave
 
 Instead of installing GNU Octave using the given dmg file (`GNU_Octave_3.8.0-6.dmg`), I chose [Homebrew](http://brew.sh/) as my choice of Octave installation method.
 
-TODO: Summarise my installation steps, possibly in a blog entry.
+TODO: Summarise my installation steps, possibly in a blog entry or something.
 
-Here are a bunch of references I read upon the Octave installation:
+Here is a bunch of references I read upon the Octave installation:
 
 - [Octave for MacOS X](http://wiki.octave.org/Octave_for_MacOS_X)
 - [How to install Octave on OS X (Yosemite)](http://adampash.com/how-to-install-octave/)
