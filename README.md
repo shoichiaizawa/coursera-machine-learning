@@ -1914,9 +1914,251 @@ gnuplot 4.6 patchlevel 6
 
 ### Control Statements: for, while, if statement
 
+#### The `for` Statement
+
+```sh
+>> v = zeros(10, 1)
+v =
+
+   0
+   0
+   0
+   0
+   0
+   0
+   0
+   0
+   0
+   0
+
+>> % Generate numbers 2 to the power of 1 to 10 using a for loop
+>> for i = 1:10,
+>    v(i) = 2^i;
+>  end;    % or `endfor`
+>> v
+v =
+
+      2
+      4
+      8
+     16
+     32
+     64
+    128
+    256
+    512
+   1024
+
+>> % You can also predefine numbers with a variable before using a for loop
+>> indices = 1:10;
+>> indices
+indices =
+
+    1    2    3    4    5    6    7    8    9   10
+
+>> for i = indices,
+>    disp(i);
+>  end;
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+ 10
+```
+
+#### The `while` Statement
+
+```sh
+>> v
+v =
+
+      2
+      4
+      8
+     16
+     32
+     64
+    128
+    256
+    512
+   1024
+
+>> i = 1;           % Initialise i = 1
+>> while i <= 5,
+>    v(i) = 100;
+>    i = i+1;
+>  end;    % or `endwhile`
+>> v
+v =
+
+    100
+    100
+    100
+    100
+    100
+     64
+    128
+    256
+    512
+   1024
+
+>> i = 1;
+>> while true,
+>    v(i) = 999;
+>    i = i+1;
+>    if i == 6,
+>      break;
+>    end;
+>  end;
+>> v
+v =
+
+    999
+    999
+    999
+    999
+    999
+     64
+    128
+    256
+    512
+   1024
+
+>> v(1)
+ans =  999
+>> v(1) = 2;
+>> if v(1) == 1,
+>    disp('The value is one');
+>  elseif v(1) == 2,
+>    disp('The value is two');
+>  else
+>    disp('The value is not one or two.');
+>  end;
+The value is two
+```
+
+#### Defining functions
+
+##### Function 1: `squareThisNumber`
+
+Here is the given file, `squareThisNumber.m`:
+
+```octave
+function y = squareThisNumber (x)
+
+y = x^2;
+```
+
+Here is how you call the function:
+
+```sh
+>> squareThisNumber(5)
+ans =  25
+```
+
+##### Resolve path error
+
+When Octave does not recognise whatever file you are trying to execute, you need to add the path where the file is located, doing this by typing `addpath('path/to/dir')`, doing so Octave recognises the file.
+
+```sh
+>> % Octave search path (advanced/optional)
+>> addpath('Users/username/path/to/dir')
+>> cd go/else/where
+>> squareThisNumber(5)
+ans =  25
+>> pwd
+ans = /Users/username/go/else/where
+```
+
+##### Function 2: `squareAndCubeThisNumber`
+
+Unlike any other programming languages, like C++, Java and such, Octave can return more than two values.
+
+Here is the given file, `squareAndCubeThisNumber.m`:
+
+```octave
+function [y1, y2] = squareAndCubeThisNumber (x)
+
+y1 = x^2;
+y2 = x^3;
+```
+
+See below how this function is called:
+
+```sh
+>> [a, b] = squareAndCubeThisNumber(5)
+a =  25
+b =  125
+```
+
+##### Function 3: `costFunctionJ`
+
+Here is the given file, `costFunctionJ.m`:
+
+```octave
+function J = costFunctionJ(X, y, theta)
+
+% X is the "design matrix" containing out training examples.
+% y is the class labels.
+
+m = size (X, 1);                   % number of training examples
+predictions = X*theta;             % predictions of hypothesis on all m examples
+sqrErrors = (predictions-y) .^ 2;  % squared errors
+
+J = 1/(2*m) * sum (sqrErrors);
+```
+
+See below how to call this function file:
+
+```sh
+>> X = [1 1; 1 2; 1 3]
+X =
+
+   1   1
+   1   2
+   1   3
+
+>> y = [1; 2; 3]
+y =
+
+   1
+   2
+   3
+
+>> theta = [0;1];
+theta =
+
+   0
+   1
+
+>> j = costFunctionJ(X, y, theta)
+j = 0
+>> theta = [0;0];
+>> j = costFunctionJ(X, y, theta)
+j =  2.3333
+>> (1^2 + 2^2 + 3^2) / (2*3)
+ans =  2.3333
+```
+
 ### Vectorization
 
+See: https://www.coursera.org/learn/machine-learning/lecture/WnQWH/vectorization
+
 ### Normal Equation Noninvertibility
+
+See: https://www.coursera.org/learn/machine-learning/lecture/zSiE6/normal-equation-noninvertibility
+
+Submitting Programming Assignments
+----------------------------------
+
+### Working on and Submitting Programming Assignments
+
+See: https://www.coursera.org/learn/machine-learning/lecture/Lt2Mx/working-on-and-submitting-programming-assignments
 
 --------------------------------------------------------------------------------
 
