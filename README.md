@@ -424,6 +424,82 @@ Linear Regression with Multiple Variables
 
 TODO: TBA
 
+### Assignment: Linear Regression
+
+I jotted down about a few things I came across while doing this assignment.
+
+Note that there is no answer introduced in this section.
+
+#### 1.1 Submitting Solutions
+
+TODO: Edit this section later (maybe)
+
+Coursera offers a unique method of submitting assignments for this course.
+In short, the submission and assessment of any assignments in this course are fully automated just by running a given script which can work on Octave/MATLAB. This script prompts you for your login email address and submission token from the assignment page and once you enter them, your answer files are immediately assessed and submitted to the Coursera servers.
+
+This is my first (proper) Coursera course so I am not sure if any other Coursera courses offer such a submission method. Maybe some other programming oriented courses might also employ this sort of submission method, or perhaps because this course is supervised by Professor Andrew Ng who is a Co-founder of Coursera, so that some cool tricks are experimented.
+
+I encountered the following error when submitting the first assignment:
+
+```octave
+% Inside the Octave command line
+>> submit
+!! Submission failed: unexpected error: urlread: HTTP response code said error
+!! Please try again later.
+```
+
+It was only a few hours before the deadline at 23:59 December 13, 2015.
+I thought I done with no marks because I had thought I would have needed to spend much time to resolve this issue.
+
+Many thanks to Jacob Middag who shared the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) for this issue; see the top voted answer in the hyperlink above.
+
+#### 2.4 Visualizing J(θ)
+
+Assuming that you have your correct answer for the cost function `J(θ)` from 2.2.3, the objective for this section 2.4 is for you to be able to understand how to generate a surface graph and a contour graph of a cost function J(θ) – as you may have read the both instruction and code in `ex1.m`, everything you need to generate the graphs is already given (except for your answer for the cost function `J(θ)`, which you need to work out).
+
+That said, when doing this section, I could not obtain either graphs. Every time I ran `ex1.m`, I saw a new figure window entitled with **Figure 2** popped up but soon the program terminated and graphs windows disappeared accordingly before any plotting happened.
+
+The Assignment instruction suggested that there was no need to modify `ex1.m` (and `ex1_multi.m`), as you see below:
+
+> Throughout the exercise, you will be using the scripts `ex1.m` and `ex1 multi.m`. These scripts set up the dataset for the problems and make calls to functions that you will write. <u>You do not need to modify either of them.</u> You are only required to modify functions in other files, by following the instructions in this assignment.
+
+I could not see any error messages when running the code and was wondering what was going on for a little while.
+But I figured out one simple solution by inserting one-liner of an Octave command at the end of the code in `ex1.m` to prevent the termination of executing `ex1.m`, which is as simple as this below:
+
+```octave
+[...]
+% Because of the way meshgrids work in the surf command, we need to
+% transpose J_vals before calling surf, or else the axes will be flipped
+J_vals = J_vals';
+% Surface plot
+figure;
+surf(theta0_vals, theta1_vals, J_vals)
+xlabel('\theta_0'); ylabel('\theta_1');
+
+% Contour plot
+figure;
+% Plot J_vals as 15 contours spaced logarithmically between 0.01 and 100
+contour(theta0_vals, theta1_vals, J_vals, logspace(-2, 3, 20))
+xlabel('\theta_0'); ylabel('\theta_1');
+hold on;
+plot(theta(1), theta(2), 'rx', 'MarkerSize', 10, 'LineWidth', 2);
+
+%%% THE END OF THE GIVEN CODE %%%
+
+% This is the added one line, the program pauses with this line and
+% allows you to see the Surface graph and Contour graph of
+% the cost function J(θ).
+pause;
+```
+
+The problem of this was the execution of `ex1.m` terminates as soon as the graphs were generated before them being able to be observed.
+So just to prevent this, I simply insert `pause;` soon after the `surf` and `contour` functions being called;
+here are the successfully generated graphs:
+
+![Surface plot for J(θ)](images/ex1-surface.png)
+
+![Contour plot for J(θ)](images/ex1-contour.png)
+
 Octave Tutorial
 ---------------
 
@@ -476,6 +552,8 @@ ans =  64
 ```
 
 #### Logical operators: `==`, `~=`, `&&`, `||`, `xor(A,B)`
+
+`1` indicates true, `2` indicates false
 
 ```sh
 octave:6> 1 == 2    % false
