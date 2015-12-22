@@ -30,9 +30,41 @@ Week 2
 --------------------------------------------------------------------------------
 
 Linear Regression with Multiple Variables
------------------------------------------
+=========================================
 
-TODO: TBA
+- Multivariate Linear Regression
+    - Multiple Features
+    - Gradient Descent for Multiple Variables
+    - Gradient Descent in Practice I - Feature Scaling
+    - Gradient Descent in Practice II - Learning Rate
+    - Features and Polynomial Regression
+- Computing Parameters Analytically
+    - Normal Equation
+- Review
+    - Quiz: Linear Regression with Multiple Variables
+
+Multivariate Linear Regression
+------------------------------
+
+### Multiple Features
+
+### Gradient Descent for Multiple Variables
+
+### Gradient Descent in Practice I - Feature Scaling
+
+### Gradient Descent in Practice II - Learning Rate
+
+### Features and Polynomial Regression
+
+Computing Parameters Analytically
+---------------------------------
+
+### Normal Equation
+
+Review
+------
+
+### Quiz: Linear Regression with Multiple Variables
 
 ### Assignment: Linear Regression
 
@@ -113,15 +145,23 @@ here are the successfully generated graphs:
 --------------------------------------------------------------------------------
 
 Octave Tutorial
----------------
+===============
 
-- Basic Operations
-- Moving Data Around
-- Computing on Data
-- Plotting Data
-- Control Statements: for, while, if statement
-- Vectorization
-- Normal Equation Noninvertibility
+- Octave Tutorial
+    - Basic Operations
+    - Moving Data Around
+    - Computing on Data
+    - Plotting Data
+    - Control Statements: for, while, if statement
+    - Vectorization
+    - Normal Equation Noninvertibility
+- Submitting Programming Assignments
+    - Working on and Submitting Programming Assignments
+- Review
+    - Quiz: Octave Tutorial
+
+Octave Tutorial
+---------------
 
 ### Basic Operations
 
@@ -1849,4 +1889,9 @@ Submitting Programming Assignments
 ### Working on and Submitting Programming Assignments
 
 See: https://www.coursera.org/learn/machine-learning/lecture/Lt2Mx/working-on-and-submitting-programming-assignments
+
+Review
+------
+
+### Quiz: Octave Tutorial
 

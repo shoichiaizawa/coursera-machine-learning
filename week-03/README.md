@@ -26,9 +26,24 @@ Week 3
 
 --------------------------------------------------------------------------------
 
-### Logistic Regression Model
+Logistic Regression
+===================
+Classification and Representation
+---------------------------------
+### Classification
+### Hypothesis Representation
+### Decision Boundary
+Logistic Regression Model
+-------------------------
+### Cost Function
+### Simplified Cost Function and Gradient Descent
+    - Multiclass Classification
+        - Multiclass Classification: One-vs-all
+    - Review
+        - Quiz: Logistic Regression
+        - Assignment: Logistic Regression
 
-#### Advanced Optimization
+### Advanced Optimization
 
 - Optimisation algorithms:
     - [Gradient descent](https://en.wikipedia.org/wiki/Gradient_descent)
@@ -38,7 +53,7 @@ Week 3
         - [L-BFGS](https://en.wikipedia.org/wiki/Limited-memory_BFGS)
         - etc
 
-##### Advantages and Disadvantages of these advanced algorithms:
+#### Advantages and Disadvantages of these advanced algorithms:
 
 - Advantages:
     - No need to manually pick α (learning rate)
@@ -52,7 +67,7 @@ Week 3
         - Should not be implemented yourself (unless you are an expert in numerical computing)
         - Different libraries may use different implementations – may hit performance
 
-##### Cost Function for logistic regression
+#### Cost Function for logistic regression
 
 ```octave
 function [jVal, gradient] = costFunction(theta)
@@ -64,7 +79,7 @@ gradient(1) = 2*(theta(1)-5);
 gradient(2) = 2*(theta(2)-5);
 ```
 
-##### Use the `fminunc` function implement this cost function
+#### Use the `fminunc` function implement this cost function
 
 `fminunc` stands for **Function Minimisation Unconstrained**
 
@@ -77,7 +92,7 @@ initialTheta = zeros(2,1)
 [optTheta, functionVal, exitFlag] = fminunc (@costFunction, initialTheta, options)
 ```
 
-##### In Octave command line
+#### In Octave command line
 
 ```octave
 >> options = optimset ('GradObj', 'on', 'MaxIter', '100');
@@ -99,7 +114,7 @@ functionVal = 0
 exitFlag =  1
 ```
 
-###### References
+##### References
 
 Octave:
 
@@ -108,3 +123,35 @@ Octave:
 MATLAB:
 
 - [fminunc](http://uk.mathworks.com/help/optim/ug/fminunc.html)
+
+Multiclass Classification
+-------------------------
+### Multiclass Classification: One-vs-all
+Review
+------
+### Quiz: Logistic Regression
+### Assignment: Logistic Regression
+
+--------------------------------------------------------------------------------
+
+- Regularization
+    - Solving the Problem of Overfitting
+        - The Problem of Overfitting
+        - Cost Function
+        - Regularized Linear Regression
+        - Regularized Logistic Regression
+    - Review
+        - Quiz: Regularization
+
+Regularization
+==============
+Solving the Problem of Overfitting
+----------------------------------
+### The Problem of Overfitting
+### Cost Function
+### Regularized Linear Regression
+### Regularized Logistic Regression
+Review
+------
+### Quiz: Regularization
+
