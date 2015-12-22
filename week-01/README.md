@@ -47,13 +47,34 @@ Week 1
 --------------------------------------------------------------------------------
 
 Introduction
-------------
+============
 
-### Environment Setup Instructions
+- Environment Setup Instructions
+    - Installing Octave
+    - Machine Learning Honor Code
+    - Course Resources
+- Introduction
+    - Welcome
+    - How to Use Discussion Forums
+    - Supervised Learning
+    - Unsupervised Learning
+    - Who are Mentors?
+    - Get to Know Your Classmates
+    - Frequently Asked Questions
+- Review
+    - Quiz: Introduction
+- Course Wiki Lecture Notes
+    - Machine Learning Course Wiki
+    - Introduction
+    - Linear Regression with One Variable
+    - Linear Algebra Review
+
+Environment Setup Instructions
+------------------------------
 
 The assignments of this course requires [GNU Octave](https://www.gnu.org/software/octave/) or [MathWorks MATLAB](http://uk.mathworks.com/products/matlab/). I chose Octave because it is open-sourced. MATLAB is licensed software, the course takers are given free access but this is only valid for 120 days and need to purchase thereafter.
 
-#### Installing Octave
+### Installing Octave
 
 Instead of installing GNU Octave using the given dmg file (`GNU_Octave_3.8.0-6.dmg`), I chose [Homebrew](http://brew.sh/) as my choice of Octave installation method.
 
@@ -68,18 +89,19 @@ Here is a bunch of references I read upon my Octave installation:
 - [Install Octave on Mac OS X 10.9](http://sumnous.github.io/blog/2014/07/13/install_octave/)
 - [Installing Octave on OS X 10.9 Mavericks](http://jatinganhotra.com/blog/2014/01/21/installing-octave-on-os-x-10-dot-9-mavericks/)
 
-#### Machine Learning Honor Code
+### Machine Learning Honor Code
 
 See: https://www.coursera.org/learn/machine-learning/supplement/nh65Z/machine-learning-honor-code
 
-#### Course Resources
+### Course Resources
 
 - [GNU Octave Documentation](http://www.gnu.org/software/octave/doc/interpreter/)
 - [Tips from Mentors](https://www.coursera.org/learn/machine-learning/supplement/SFKpu/tips-from-mentors)
 
-### Introduction
+Introduction
+------------
 
-#### Welcome
+### Welcome
 
 > Machine Learning exists everywhere without you knowing.
 
@@ -87,12 +109,12 @@ See: https://www.coursera.org/learn/machine-learning/supplement/nh65Z/machine-le
 - Face recognition in the iPhoto app
 - Anti spam mails judgement
 
-##### Machine Learning
+#### Machine Learning
 
 - Grew out of work in AI
 - New capability for computers
 
-###### Examples:
+##### Examples:
 
 - Database mining
     - Large datasets from grouth of automation/web
@@ -112,19 +134,19 @@ See: https://www.coursera.org/learn/machine-learning/supplement/nh65Z/machine-le
         - Amazon, Netflix product recommendations
 - Understanding human learning (brain, real AI)
 
-#### How to Use Discussion Forums
+### How to Use Discussion Forums
 
 TODO: See: https://www.coursera.org/learn/machine-learning/supplement/66jBd/how-to-use-discussion-forums
 
-#### Supervised Learning
+### Supervised Learning
 
-##### Housing price prediction
+#### Housing price prediction
 
 <u>Supervised Learning</u>: "right answers" given
 
 <u>Regression</u>: Predict continuous value output (price)
 
-##### Breast cancer (malignant, benign)
+#### Breast cancer (malignant, benign)
 
 <u>Classification</u>: Discrete valued output (0 or 1)
 
@@ -136,7 +158,7 @@ Other factors can be taken into account:
 - Uniformity of Cell Size
 - Uniformity of Cell Shape
 
-##### A quick wrap up question
+#### A quick wrap up question
 
 You're running a company, and you want to develop learning algorithms to address each of two problems.
 
@@ -150,44 +172,44 @@ Should you tree three as classification of as regression problems?
 - [x] Treat problem 2 as a regression problem, problem 2 as a classification problem.
 - [ ] Treat both as regression problems.
 
-#### Unsupervised Learning
+### Unsupervised Learning
 
-##### Example 1: Google News's data clustering
+#### Example 1: Google News's data clustering
 
 [Google News](https://news.google.com/) groups a set of news articles found on the web into set of articles about the same story.
 
-###### References
+##### References
 
 - [Cluster analysis](https://en.wikipedia.org/wiki/Cluster_analysis)
 
-##### Example 2: DNA microarray data
+#### Example 2: DNA microarray data
 
 TODO: TBA
 
-###### References
+##### References
 
 - [DNA microarray](https://en.wikipedia.org/wiki/DNA_microarray)
 - [Identifying regulatory mechanisms using individual variation reveals key role for chromatin modification](http://www.c2b2.columbia.edu/danapeerlab/html/pub/pnas2006.pdf) -- a research paper
 
-##### Some more of examples of unsupervised learning
+#### Some more of examples of unsupervised learning
 
 - Organise computing clusters
 - Social network analysis
 - Market segmentation
 - Astronomical data analysis
 
-##### Cocktail party problem
+#### Cocktail party problem
 
-###### Resources:
+##### Resources:
 
 - [Cocktail party effect](https://en.wikipedia.org/wiki/Cocktail_party_effect)
 - [Source separation](https://en.wikipedia.org/wiki/Source_separation)
 
-##### Cocktail Party program algorithm
+#### Cocktail Party program algorithm
 
 `[W,s,v] = svd((repmat(sum(x.*x,1),size(x,1).*x)*x'));`
 
-##### A quick wrap up question
+#### A quick wrap up question
 
 Of the following examples, which would you address using an <u>unsupervised</u> learning algorithm? (Check all that apply.)
 
@@ -196,39 +218,41 @@ Of the following examples, which would you address using an <u>unsupervised</u> 
 - [x] Given a database of customer data, automatically discover market segments and group customers into different market segments.
 - [ ] Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not.
 
-#### Who are Mentors?
+### Who are Mentors?
 
 See: https://www.coursera.org/learn/machine-learning/supplement/JBzFm/who-are-mentors
 
-#### Get to Know Your Classmates
+### Get to Know Your Classmates
 
 See: https://www.coursera.org/learn/machine-learning/supplement/dJCBb/get-to-know-your-classmates
 
-#### Frequently Asked Questions
+### Frequently Asked Questions
 
 XXX: Helpful info
 
 https://www.coursera.org/learn/machine-learning/supplement/gBboB/frequently-asked-questions
 
-### Review
+Review
+------
 
-#### Quiz: Introduction
+### Quiz: Introduction
 
 See: https://www.coursera.org/learn/machine-learning/exam/wjqip/introduction
 
-### Course Wiki Lecture Notes
+Course Wiki Lecture Notes
+-------------------------
 
-#### Machine Learning Course Wiki
+### Machine Learning Course Wiki
 
 This Course Wiki was compiled by learners who took the session-based version of Machine Learning. Many learners took the time to help fellow classmates by sharing information on this site when they solved a tough installation issue or received helpful advice about a review question, programming exercise, or the video lectures. Eventually we'll be transcribing the information contained in the Wiki directly onto the On-Demand platform.
 
 In the interim, please access the wiki here: [https://share.coursera.org/wiki/index.php/ML:Main](https://share.coursera.org/wiki/index.php/ML:Main).
 
-#### Introduction
+### Introduction
 
 See: https://www.coursera.org/learn/machine-learning/supplement/X64SM/introduction
 
-##### What is Machine Learning?
+#### What is Machine Learning?
 
 Two definitions of Machine Learning are offered. Arthur Samuel described it as:
 
@@ -244,19 +268,19 @@ E = the experience of playing many games of checkers
 T = the task of playing checkers.
 P = the probability that the program will win the next game.
 
-##### Supervised Learning
+#### Supervised Learning
 
 In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.
 
 Supervised learning problems are categorized into **"regression"** and **"classification"** problems. In a **regression** problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a **classification** problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into **discrete** categories.
 
-###### Example:
+##### Example:
 
 Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a *continuous* output, so this is a regression problem.
 
 We could turn this example into a classification problem by instead making our output about whether the house "sells for more or less than the asking price." Here we are classifying the houses based on price into two *discrete* categories.
 
-##### Unsupervised Learning
+#### Unsupervised Learning
 
 Unsupervised learning, on the other hand, allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.
 
@@ -264,24 +288,70 @@ We can derive this structure by **clustering** the data based on relationships a
 
 With unsupervised learning there is no feedback based on the prediction results, i.e., there is no teacher to correct you. It’s not just about clustering. For example, associative memory is unsupervised learning.
 
-###### Example:
+##### Example:
 
 *Clustering*: Take a collection of 1000 essays written on the US Economy, and find a way to automatically group these essays into a small number that are somehow similar or related by different variables, such as word frequency, sentence length, page count, and so on.
 
 *Associative*: Suppose a doctor over years of experience forms associations in his mind between patient characteristics and illnesses that they have. If a new patient shows up then based on this patient’s characteristics such as symptoms, family medical history, physical attributes, mental outlook, etc the doctor associates possible illness or illnesses based on what the doctor has seen before with similar patients. This is not the same as rule based reasoning as in expert systems. In this case we would like to estimate a mapping function from patient characteristics into illnesses.
 
-#### Linear Regression with One Variable
+--------------------------------------------------------------------------------
+
+Linear Regression with One Variable
+===================================
+
+- Model and Cost Function
+    - Model Representation
+    - Cost Function
+    - Cost Function - Intuition I
+    - Cost Function - Intuition II
+- Parameter Learning
+    - Gradient Descent
+    - Gradient Descent Intuition
+    - Gradient Descent For Linear Regression
+- Review
+    - Quiz: Linear Regression with One Variable
 
 See: https://www.coursera.org/learn/machine-learning/supplement/Mc0tF/linear-regression-with-one-variable
 
-- Model Representation
-- The Hypothesis Function
-- Cost Function
-- Gradient Descent
-- Gradient Descent for Linear Regression
-- What's Next
+Model and Cost Function
+-----------------------
 
-#### Linear Algebra Review
+### Model Representation
+
+### Cost Function
+
+### Cost Function - Intuition I
+
+### Cost Function - Intuition II
+
+Parameter Learning
+------------------
+
+### Gradient Descent
+
+### Gradient Descent Intuition
+
+### Gradient Descent For Linear Regression
+
+Review
+------
+
+### Quiz: Linear Regression with One Variable
+
+--------------------------------------------------------------------------------
+
+Linear Algebra Review
+=====================
+
+- Linear Algebra Review
+    - Matrices and Vectors
+    - Addition and Scalar Multiplication
+    - Matrix Vector Multiplication
+    - Matrix Matrix Multiplication
+    - Matrix Multiplication Properties
+    - Inverse and Transpose
+- Review
+    - Practice Quiz: Linear Algebra
 
 See: https://www.coursera.org/learn/machine-learning/supplement/NMXXL/linear-algebra-review
 
@@ -289,24 +359,23 @@ Khan Academy has excellent [Linear Algebra Tutorials](https://www.khanacademy.or
 
 This online [Linear Algebra text](https://en.wikipedia.org/wiki/Linear_least_squares_%28mathematics%29#Derivation_of_the_normal_equations) is also an excellent resource, particularly for a proof of the normal equation.
 
-- Matrices and Vectors
-- Addition and Scalar Multiplication
-- Matrix-Vector Multiplication
-- Matrix-Matrix Multiplication
-- Matrix Multiplication Properties
-- Inverse and Transpose
-- Footnotes
-
---------------------------------------------------------------------------------
-
-Linear Regression with One Variable
------------------------------------
-
-TBA
-
---------------------------------------------------------------------------------
-
 Linear Algebra Review
 ---------------------
 
-TBA
+### Matrices and Vectors
+
+### Addition and Scalar Multiplication
+
+### Matrix Vector Multiplication
+
+### Matrix Matrix Multiplication
+
+### Matrix Multiplication Properties
+
+### Inverse and Transpose
+
+Review
+------
+
+### Practice Quiz: Linear Algebra
+
