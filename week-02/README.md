@@ -138,9 +138,9 @@ The problem of this was the execution of `ex1.m` terminates as soon as the graph
 So just to prevent this, I simply insert `pause;` soon after the `surf` and `contour` functions being called;
 here are the successfully generated graphs:
 
-![Surface plot for J(θ)](images/ex1-surface.png)
+![Surface plot for J(θ)](../images/ex1-surface.png)
 
-![Contour plot for J(θ)](images/ex1-contour.png)
+![Contour plot for J(θ)](../images/ex1-contour.png)
 
 --------------------------------------------------------------------------------
 
@@ -380,9 +380,9 @@ w =
 >> hist(w,50)
 ```
 
-![Histogram – hist(w)](images/histogram-01.png)
+![Histogram – hist(w)](../images/histogram-01.png)
 
-![Histogram – hist(w,50)](images/histogram-02.png)
+![Histogram – hist(w,50)](../images/histogram-02.png)
 
 #### Some other useful functions
 
@@ -1385,9 +1385,9 @@ ans =
 >> plot(t,y2);
 ```
 
-![Figure 1: plot(t,y), where t = [0:0.01:0.98] and y1 = sin(2\*pi\*4\*t)](images/octave-tutorial-01.png)
+![Figure 1: plot(t,y), where t = [0:0.01:0.98] and y1 = sin(2\*pi\*4\*t)](../images/octave-tutorial-01.png)
 
-![Figure 1: plot(t,y), where t = [0:0.01:0.98] and y2 = cos(2\*pi\*4\*t))](images/octave-tutorial-02.png)
+![Figure 1: plot(t,y), where t = [0:0.01:0.98] and y2 = cos(2\*pi\*4\*t))](../images/octave-tutorial-02.png)
 
 #### Plotting two lines on the same graph
 
@@ -1400,9 +1400,9 @@ ans =
 >> legend('sin', 'cos')
 >> title('my plot')
 ```
-![Figure 1: y1 in blue line and y2 in red line](images/octave-tutorial-03.png)
+![Figure 1: y1 in blue line and y2 in red line](../images/octave-tutorial-03.png)
 
-![Figure 1: my plot](images/octave-tutorial-04.png)
+![Figure 1: my plot](../images/octave-tutorial-04.png)
 
 #### Save an image as a png file
 
@@ -1419,16 +1419,16 @@ warning: called from
 >> close
 ```
 
-![Filed output of my plot graph](images/myPlot-failed.png)
+![Filed output of my plot graph](../images/myPlot-failed.png)
 
 ```sh
 >> figure(1); plot(t,y1);
 >> figure(2); plot(t,y2);
 ```
 
-![Figure 1: y1](images/octave-tutorial-05.png)
+![Figure 1: y1](../images/octave-tutorial-05.png)
 
-![Figure 2: y2](images/octave-tutorial-06.png)
+![Figure 2: y2](../images/octave-tutorial-06.png)
 
 ```sh
 >> subplot(1,2,1);    % Divides plot a 1x2 grid, access first element
@@ -1439,7 +1439,7 @@ warning: called from
 >> help axis
 ```
 
-![Figure 1: y1 and y2 with two different grid graphs](images/octave-tutorial-07.png)
+![Figure 1: y1 and y2 with two different grid graphs](../images/octave-tutorial-07.png)
 
 ```sh
 >> clf
@@ -1460,15 +1460,15 @@ ans =  24
 ans =  3
 ```
 
-![Figure 1: imagesc(A)](images/octave-tutorial-08.png)
+![Figure 1: imagesc(A)](../images/octave-tutorial-08.png)
 
-![Figure 1: imagesc(A), colorbar, colormap gray](images/octave-tutorial-09.png)
+![Figure 1: imagesc(A), colorbar, colormap gray](../images/octave-tutorial-09.png)
 
 ```sh
 >> imagesc(magic(15)), colorbar, colormap gray;
 ```
 
-![Figure 1: imagesc(magic(15)), colorbar, colormap gray](images/octave-tutorial-10.png)
+![Figure 1: imagesc(magic(15)), colorbar, colormap gray](../images/octave-tutorial-10.png)
 
 ```sh
 >> a=1, b=2, c=3
@@ -1498,7 +1498,7 @@ Along the way following Professor Ng's Octave tutorial, I encountered an error w
 
 And `myFile.png` was generated with a solid black image on the grid as below:
 
-![Filed output of my plot graph](images/myPlot-failed.png)
+![Filed output of my plot graph](../images/myPlot-failed.png)
 
 This is said to be caused by gnuplot 5. I had to downgrade to gnuplot 4 to resolve this issue.
 After downgrading `gnuplot` from `5.0.1` to `4.6.6`, the `print` command outputs the plot successfully:
@@ -1510,7 +1510,7 @@ After downgrading `gnuplot` from `5.0.1` to `4.6.6`, the `print` command outputs
 
 Below is the successful output of my plot graph:
 
-![Successful output of my plot graph](images/myPlot.png)
+![Successful output of my plot graph](../images/myPlot.png)
 
 ##### References:
 
