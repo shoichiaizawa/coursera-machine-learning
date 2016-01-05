@@ -81,6 +81,8 @@ In short, the submission and assessment of any assignments in this course are fu
 
 This is my first (proper) Coursera course so I am not sure if any other Coursera courses offer such a submission method. Maybe some other programming oriented courses might also employ this sort of submission method, or perhaps because this course is supervised by Professor Andrew Ng who is a Co-founder of Coursera, so that some cool tricks are experimented.
 
+##### Submission failed
+
 I encountered the following error when submitting the first assignment:
 
 ```octave
@@ -90,10 +92,14 @@ I encountered the following error when submitting the first assignment:
 !! Please try again later.
 ```
 
-It was only a few hours before the deadline at 23:59 December 13, 2015.
-I thought I done with no marks because I had thought I would have needed to spend much time to resolve this issue.
+This is said to be that the conversion from ASCII to the hexadecimal escape the jsonlib uses is not working properly anymore in Octave 4.0.0.
+
+I encountered this error only a few hours before the deadline at **23:59 December 13, 2015**.
+I thought I was done with no marks because I had thought I would have needed to spend much time to resolve this issue.
 
 Many thanks to Jacob Middag who shared the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) for this issue; see the top voted answer in the hyperlink above.
+
+**[Update: 5 January 2016]** There is another way to fix this issue. A mentor from the Machine Learning course introduces a patch to fix the issue above in the [course forum](https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog). Briefly, to fix the issue above, you need to install this [\<patch>](https://drive.google.com/file/d/0B6lXyE7fgSlXZjlqQ3FIRExmTDA/view). This patch does exactly what the code codification in the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) above fixes, in a slightly different manner. See the detailed explanation in each hyperlink above.
 
 #### 2.4 Visualizing J(θ)
 
