@@ -92,14 +92,61 @@ I encountered the following error when submitting the first assignment:
 !! Please try again later.
 ```
 
-This is said to be that the conversion from ASCII to the hexadecimal escape the jsonlib uses is not working properly anymore in Octave 4.0.0.
+This is said to be that the conversion from ASCII to the hexadecimal escape JSONLab uses is not working properly anymore in Octave 4.0.0.
 
 I encountered this error only a few hours before the deadline at **23:59 December 13, 2015**.
 I thought I was done with no marks because I had thought I would have needed to spend much time to resolve this issue.
 
-Many thanks to Jacob Middag who shared the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) for this issue; see the top voted answer in the hyperlink above.
+Many thanks to Jacob Middag who shared the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) for this issue; see the top voted answer in the hyperlink above. -> TODO: Write more about this solution.
 
-**[Update: 5 January 2016]** There is another way to fix this issue. A mentor from the Machine Learning course introduces a patch to fix the issue above in the [course forum](https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog). Briefly, to fix the issue above, you need to install this [\<patch>](https://drive.google.com/file/d/0B6lXyE7fgSlXZjlqQ3FIRExmTDA/view). This patch does exactly what the code codification in the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) above fixes, in a slightly different manner. See the detailed explanation in each hyperlink above.
+###### Update: 11 January 2016
+
+I found that there is another way to fix this issue above. A mentor from the Machine Learning course introduces a patch to fix the issue in the [course forum](https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog).
+
+Briefly speaking, to fix the issue, you need to install this [\<patch>](https://drive.google.com/file/d/0B6lXyE7fgSlXZjlqQ3FIRExmTDA/view) and replace some of the original files inside `machine-learning-ex?/ex?/lib` with the files inside the given patch directory. You need to take this step for every assignment if you are using Octave 4.0.0.
+
+According to the course forum, this will be fixed in Octave 4.0.1. -> TODO: Why they can make this statement? Find out why if any reasons.
+
+This patch directory, `ML_Octave_400_patch/` contains the following files:
+
+```
+$ tree ML_Octave_400_patch
+ML_Octave_400_patch
+├── lib/
+│   ├── jsonlab/
+│   │   └── loadjson.m*
+│   ├── makeValidFieldName.m*
+│   └── xxNumToHexStr.m*
+└── readme.txt*
+
+2 directories, 4 files
+```
+
+The instruction is given in `readme.txt`:
+
+```text
+This patch works around the defective printf() function in Octave 4.0.0
+
+Instructions:
+
+1) Extract the contents of this zip file to the "machine-learning-ex?/ex?/" folder
+for each programming exercise.  Be sure you preserve the folder attributes and the
+other files in that subfolder.
+
+This patch will overwrite these two existing files:
+  lib/makeValidFieldName.m
+  lib/jsonlab/loadjson.m
+It will add the following new file:
+  lib/xxNumToHexStr.m
+
+2) Restart Octave or MATLAB after installing the patch.
+```
+
+In Mac OS X, you can simply copy-drag (Option⌥ + Drag) and drop the `ML_Octave_400_patch/lib/` directory into the `machine-learning-ex?/ex?/` directory, but ensure that you select <u>***Merge*** instead of Replace</u> so as to preserve the other files in the `machine-learning-ex?/ex?/lib/` directory.
+
+!['Merge' instead of 'Replace'](../images/patch-files-replacement.png)
+
+Note that this patch does exactly what the code modification in the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) above fixes, but in a slightly different manner. See the detailed explanation in each hyperlink above.
 
 #### 2.4 Visualizing J(θ)
 
