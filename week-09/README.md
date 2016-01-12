@@ -48,35 +48,50 @@ Anomaly Detection
 - Review
     - Quiz: Anomaly Detection
 
-Density Estimation
-------------------
+\[Density Estimation] Problem Motivation
+----------------------------------------
 
-### Problem Motivation
+TODO: TBA
 
-### Gaussian Distribution
+\[Density Estimation] Gaussian Distribution
+-------------------------------------------
 
-### Algorithm
+TODO: TBA
 
-Building an Anomaly Detection System
-------------------------------------
+\[Density Estimation] Algorithm
+-------------------------------
 
-### Developing and Evaluating an Anomaly Detection System
+TODO: TBA
 
-### Anomaly Detection vs. Supervised Learning
+\[Building an Anomaly Detection System] Developing and Evaluating an Anomaly Detection System
+---------------------------------------------------------------------------------------------
 
-### Choosing What Features to Use
+TODO: TBA
 
-Multivariate Gaussian Distribution (Optional)
----------------------------------------------
+\[Building an Anomaly Detection System] Anomaly Detection vs. Supervised Learning
+---------------------------------------------------------------------------------
 
-### Multivariate Gaussian Distribution
+TODO: TBA
 
-### Anomaly Detection using the Multivariate Gaussian Distribution
+\[Building an Anomaly Detection System] Choosing What Features to Use
+---------------------------------------------------------------------
 
-Review
-------
+TODO: TBA
 
-### Quiz: Anomaly Detection
+\[Multivariate Gaussian Distribution (Optional)] Multivariate Gaussian Distribution
+-----------------------------------------------------------------------------------
+
+TODO: TBA
+
+\[Multivariate Gaussian Distribution (Optional)] Anomaly Detection using the Multivariate Gaussian Distribution
+---------------------------------------------------------------------------------------------------------------
+
+TODO: TBA
+
+\[Review] Quiz: Anomaly Detection
+---------------------------------
+
+TODO: TBA
 
 --------------------------------------------------------------------------------
 
@@ -96,31 +111,43 @@ Recommender Systems
     - Quiz: Recommender Systems
     - Assignment: Anomaly Detection and Recommender Systems
 
-Predicting Movie Ratings
-------------------------
+\[Predicting Movie Ratings] Problem Formulation
+-----------------------------------------------
 
-### Problem Formulation
+TODO: TBA
 
-### Content Based Recommendations
+\[Predicting Movie Ratings] Content Based Recommendations
+---------------------------------------------------------
 
-Collaborative Filtering
------------------------
+TODO: TBA
 
-### Collaborative Filtering
+\[Collaborative Filtering] Collaborative Filtering
+--------------------------------------------------
 
-### Collaborative Filtering Algorithm
+TODO: TBA
 
-Low Rank Matrix Factorization
------------------------------
+\[Collaborative Filtering] Collaborative Filtering Algorithm
+------------------------------------------------------------
 
-### Vectorization: Low Rank Matrix Factorization
+TODO: TBA
 
-### Implementational Detail: Mean Normalization
+\[Low Rank Matrix Factorization] Vectorization: Low Rank Matrix Factorization
+-----------------------------------------------------------------------------
 
-Review
-------
+TODO: TBA
 
-### Quiz: Recommender Systems
+\[Low Rank Matrix Factorization] Implementational Detail: Mean Normalization
+----------------------------------------------------------------------------
 
-### Assignment: Anomaly Detection and Recommender Systems
+TODO: TBA
+
+\[Review] Quiz: Recommender Systems
+-----------------------------------
+
+TODO: TBA
+
+\[Review] Assignment: Anomaly Detection and Recommender Systems
+---------------------------------------------------------------
+
+TODO: TBA
 

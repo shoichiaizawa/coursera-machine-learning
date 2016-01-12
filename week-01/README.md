@@ -69,12 +69,10 @@ Introduction
     - Linear Regression with One Variable
     - Linear Algebra Review
 
-Environment Setup Instructions
-------------------------------
+\[Environment Setup Instructions] Installing Octave
+---------------------------------------------------
 
 The assignments of this course requires [GNU Octave](https://www.gnu.org/software/octave/) or [MathWorks MATLAB](http://uk.mathworks.com/products/matlab/). I chose Octave because it is open-sourced. MATLAB is licensed software, the course takers are given free access but this is only valid for 120 days and need to purchase thereafter.
-
-### Installing Octave
 
 Instead of installing GNU Octave using the given dmg file (`GNU_Octave_3.8.0-6.dmg`), I chose [Homebrew](http://brew.sh/) as my choice of Octave installation method.
 
@@ -89,19 +87,19 @@ Here is a bunch of references I read upon my Octave installation:
 - [Install Octave on Mac OS X 10.9](http://sumnous.github.io/blog/2014/07/13/install_octave/)
 - [Installing Octave on OS X 10.9 Mavericks](http://jatinganhotra.com/blog/2014/01/21/installing-octave-on-os-x-10-dot-9-mavericks/)
 
-### Machine Learning Honor Code
+\[Environment Setup Instructions] Machine Learning Honor Code
+-------------------------------------------------------------
 
 See: https://www.coursera.org/learn/machine-learning/supplement/nh65Z/machine-learning-honor-code
 
-### Course Resources
+\[Environment Setup Instructions] Course Resources
+--------------------------------------------------
 
 - [GNU Octave Documentation](http://www.gnu.org/software/octave/doc/interpreter/)
 - [Tips from Mentors](https://www.coursera.org/learn/machine-learning/supplement/SFKpu/tips-from-mentors)
 
-Introduction
-------------
-
-### Welcome
+\[Introduction] Welcome
+-----------------------
 
 > Machine Learning exists everywhere without you knowing.
 
@@ -109,12 +107,12 @@ Introduction
 - Face recognition in the iPhoto app
 - Anti spam mails judgement
 
-#### Machine Learning
+### Machine Learning
 
 - Grew out of work in AI
 - New capability for computers
 
-##### Examples:
+#### Examples:
 
 - Database mining
     - Large datasets from grouth of automation/web
@@ -134,19 +132,21 @@ Introduction
         - Amazon, Netflix product recommendations
 - Understanding human learning (brain, real AI)
 
-### How to Use Discussion Forums
+\[Introduction] How to Use Discussion Forums
+--------------------------------------------
 
 TODO: See: https://www.coursera.org/learn/machine-learning/supplement/66jBd/how-to-use-discussion-forums
 
-### Supervised Learning
+\[Introduction] Supervised Learning
+-----------------------------------
 
-#### Housing price prediction
+### Housing price prediction
 
 <u>Supervised Learning</u>: "right answers" given
 
 <u>Regression</u>: Predict continuous value output (price)
 
-#### Breast cancer (malignant, benign)
+### Breast cancer (malignant, benign)
 
 <u>Classification</u>: Discrete valued output (0 or 1)
 
@@ -158,7 +158,7 @@ Other factors can be taken into account:
 - Uniformity of Cell Size
 - Uniformity of Cell Shape
 
-#### A quick wrap up question
+### A quick wrap up question
 
 You're running a company, and you want to develop learning algorithms to address each of two problems.
 
@@ -172,9 +172,10 @@ Should you tree three as classification of as regression problems?
 - [x] Treat problem 2 as a regression problem, problem 2 as a classification problem.
 - [ ] Treat both as regression problems.
 
-### Unsupervised Learning
+\[Introduction] Unsupervised Learning
+-------------------------------------
 
-#### Example 1: Google News's data clustering
+### Example 1: Google News's data clustering
 
 [Google News](https://news.google.com/) groups a set of news articles found on the web into set of articles about the same story.
 
@@ -182,7 +183,7 @@ Should you tree three as classification of as regression problems?
 
 - [Cluster analysis](https://en.wikipedia.org/wiki/Cluster_analysis)
 
-#### Example 2: DNA microarray data
+### Example 2: DNA microarray data
 
 TODO: TBA
 
@@ -191,25 +192,25 @@ TODO: TBA
 - [DNA microarray](https://en.wikipedia.org/wiki/DNA_microarray)
 - [Identifying regulatory mechanisms using individual variation reveals key role for chromatin modification](http://www.c2b2.columbia.edu/danapeerlab/html/pub/pnas2006.pdf) -- a research paper
 
-#### Some more of examples of unsupervised learning
+### Some more of examples of unsupervised learning
 
 - Organise computing clusters
 - Social network analysis
 - Market segmentation
 - Astronomical data analysis
 
-#### Cocktail party problem
+### Cocktail party problem
 
 ##### Resources:
 
 - [Cocktail party effect](https://en.wikipedia.org/wiki/Cocktail_party_effect)
 - [Source separation](https://en.wikipedia.org/wiki/Source_separation)
 
-#### Cocktail Party program algorithm
+### Cocktail Party program algorithm
 
 `[W,s,v] = svd((repmat(sum(x.*x,1),size(x,1).*x)*x'));`
 
-#### A quick wrap up question
+### A quick wrap up question
 
 Of the following examples, which would you address using an <u>unsupervised</u> learning algorithm? (Check all that apply.)
 
@@ -218,41 +219,41 @@ Of the following examples, which would you address using an <u>unsupervised</u> 
 - [x] Given a database of customer data, automatically discover market segments and group customers into different market segments.
 - [ ] Given a dataset of patients diagnosed as either having diabetes or not, learn to classify new patients as having diabetes or not.
 
-### Who are Mentors?
+\[Introduction] Who are Mentors?
+--------------------------------
 
 See: https://www.coursera.org/learn/machine-learning/supplement/JBzFm/who-are-mentors
 
-### Get to Know Your Classmates
+\[Introduction] Get to Know Your Classmates
+-------------------------------------------
 
 See: https://www.coursera.org/learn/machine-learning/supplement/dJCBb/get-to-know-your-classmates
 
-### Frequently Asked Questions
+\[Introduction] Frequently Asked Questions
+------------------------------------------
 
 XXX: Helpful info
 
 https://www.coursera.org/learn/machine-learning/supplement/gBboB/frequently-asked-questions
 
-Review
-------
-
-### Quiz: Introduction
+\[Review] Quiz: Introduction
+----------------------------
 
 See: https://www.coursera.org/learn/machine-learning/exam/wjqip/introduction
 
-Course Wiki Lecture Notes
--------------------------
-
-### Machine Learning Course Wiki
+\[Course Wiki Lecture Notes] Machine Learning Course Wiki
+---------------------------------------------------------
 
 This Course Wiki was compiled by learners who took the session-based version of Machine Learning. Many learners took the time to help fellow classmates by sharing information on this site when they solved a tough installation issue or received helpful advice about a review question, programming exercise, or the video lectures. Eventually we'll be transcribing the information contained in the Wiki directly onto the On-Demand platform.
 
 In the interim, please access the wiki here: [https://share.coursera.org/wiki/index.php/ML:Main](https://share.coursera.org/wiki/index.php/ML:Main).
 
-### Introduction
+\[Course Wiki Lecture Notes] Introduction
+-----------------------------------------
 
 See: https://www.coursera.org/learn/machine-learning/supplement/X64SM/introduction
 
-#### What is Machine Learning?
+### What is Machine Learning?
 
 Two definitions of Machine Learning are offered. Arthur Samuel described it as:
 
@@ -268,19 +269,19 @@ E = the experience of playing many games of checkers
 T = the task of playing checkers.
 P = the probability that the program will win the next game.
 
-#### Supervised Learning
+### Supervised Learning
 
 In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output.
 
 Supervised learning problems are categorized into **"regression"** and **"classification"** problems. In a **regression** problem, we are trying to predict results within a continuous output, meaning that we are trying to map input variables to some continuous function. In a **classification** problem, we are instead trying to predict results in a discrete output. In other words, we are trying to map input variables into **discrete** categories.
 
-##### Example:
+#### Example:
 
 Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a *continuous* output, so this is a regression problem.
 
 We could turn this example into a classification problem by instead making our output about whether the house "sells for more or less than the asking price." Here we are classifying the houses based on price into two *discrete* categories.
 
-#### Unsupervised Learning
+### Unsupervised Learning
 
 Unsupervised learning, on the other hand, allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.
 
@@ -288,7 +289,7 @@ We can derive this structure by **clustering** the data based on relationships a
 
 With unsupervised learning there is no feedback based on the prediction results, i.e., there is no teacher to correct you. It’s not just about clustering. For example, associative memory is unsupervised learning.
 
-##### Example:
+#### Example:
 
 *Clustering*: Take a collection of 1000 essays written on the US Economy, and find a way to automatically group these essays into a small number that are somehow similar or related by different variables, such as word frequency, sentence length, page count, and so on.
 
@@ -313,30 +314,45 @@ Linear Regression with One Variable
 
 See: https://www.coursera.org/learn/machine-learning/supplement/Mc0tF/linear-regression-with-one-variable
 
-Model and Cost Function
------------------------
+\[Model and Cost Function] Model Representation
+-----------------------------------------------
 
-### Model Representation
+TODO: TBA
 
-### Cost Function
+\[Model and Cost Function] Cost Function
+----------------------------------------
 
-### Cost Function - Intuition I
+TODO: TBA
 
-### Cost Function - Intuition II
+\[Model and Cost Function] Cost Function - Intuition I
+------------------------------------------------------
 
-Parameter Learning
-------------------
+TODO: TBA
 
-### Gradient Descent
+\[Model and Cost Function] Cost Function - Intuition II
+-------------------------------------------------------
 
-### Gradient Descent Intuition
+TODO: TBA
 
-### Gradient Descent For Linear Regression
+\[Parameter Learning] Gradient Descent
+--------------------------------------
 
-Review
-------
+TODO: TBA
 
-### Quiz: Linear Regression with One Variable
+\[Parameter Learning] Gradient Descent Intuition
+------------------------------------------------
+
+TODO: TBA
+
+\[Parameter Learning] Gradient Descent For Linear Regression
+------------------------------------------------------------
+
+TODO: TBA
+
+\[Review] Quiz: Linear Regression with One Variable
+---------------------------------------------------
+
+TODO: TBA
 
 --------------------------------------------------------------------------------
 
@@ -359,23 +375,38 @@ Khan Academy has excellent [Linear Algebra Tutorials](https://www.khanacademy.or
 
 This online [Linear Algebra text](https://en.wikipedia.org/wiki/Linear_least_squares_%28mathematics%29#Derivation_of_the_normal_equations) is also an excellent resource, particularly for a proof of the normal equation.
 
-Linear Algebra Review
----------------------
+\[Linear Algebra Review] Matrices and Vectors
+---------------------------------------------
 
-### Matrices and Vectors
+TODO: TBA
 
-### Addition and Scalar Multiplication
+\[Linear Algebra Review] Addition and Scalar Multiplication
+-----------------------------------------------------------
 
-### Matrix Vector Multiplication
+TODO: TBA
 
-### Matrix Matrix Multiplication
+\[Linear Algebra Review] Matrix Vector Multiplication
+-----------------------------------------------------
 
-### Matrix Multiplication Properties
+TODO: TBA
 
-### Inverse and Transpose
+\[Linear Algebra Review] Matrix Matrix Multiplication
+-----------------------------------------------------
 
-Review
-------
+TODO: TBA
 
-### Practice Quiz: Linear Algebra
+\[Linear Algebra Review] Matrix Multiplication Properties
+---------------------------------------------------------
+
+TODO: TBA
+
+\[Linear Algebra Review] Inverse and Transpose
+----------------------------------------------
+
+TODO: TBA
+
+\[Review] Practice Quiz: Linear Algebra
+---------------------------------------
+
+TODO: TBA
 

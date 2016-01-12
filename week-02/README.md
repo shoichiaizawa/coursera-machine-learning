@@ -43,36 +43,49 @@ Linear Regression with Multiple Variables
 - Review
     - Quiz: Linear Regression with Multiple Variables
 
-Multivariate Linear Regression
-------------------------------
+\[Multivariate Linear Regression] Multiple Features
+---------------------------------------------------
 
-### Multiple Features
+TODO: TBA
 
-### Gradient Descent for Multiple Variables
+\[Multivariate Linear Regression] Gradient Descent for Multiple Variables
+-------------------------------------------------------------------------
 
-### Gradient Descent in Practice I - Feature Scaling
+TODO: TBA
 
-### Gradient Descent in Practice II - Learning Rate
+\[Multivariate Linear Regression] Gradient Descent in Practice I - Feature Scaling
+----------------------------------------------------------------------------------
 
-### Features and Polynomial Regression
+TODO: TBA
 
-Computing Parameters Analytically
----------------------------------
+\[Multivariate Linear Regression] Gradient Descent in Practice II - Learning Rate
+---------------------------------------------------------------------------------
 
-### Normal Equation
+TODO: TBA
 
-Review
-------
+\[Multivariate Linear Regression] Features and Polynomial Regression
+--------------------------------------------------------------------
 
-### Quiz: Linear Regression with Multiple Variables
+TODO: TBA
 
-### Assignment: Linear Regression
+\[Computing Parameters Analytically] Normal Equation
+----------------------------------------------------
+
+TODO: TBA
+
+\[Review] Quiz: Linear Regression with Multiple Variables
+---------------------------------------------------------
+
+TODO: TBA
+
+\[Review] Assignment: Linear Regression
+---------------------------------------
 
 I jotted down about a few things I came across while doing this assignment.
 
 Note that there is no answer introduced in this section.
 
-#### 1.1 Submitting Solutions
+### 1.1 Submitting Solutions
 
 TODO: Edit this section later (maybe)
 
@@ -81,7 +94,7 @@ In short, the submission and assessment of any assignments in this course are fu
 
 This is my first (proper) Coursera course so I am not sure if any other Coursera courses offer such a submission method. Maybe some other programming oriented courses might also employ this sort of submission method, or perhaps because this course is supervised by Professor Andrew Ng who is a Co-founder of Coursera, so that some cool tricks are experimented.
 
-##### Submission failed
+### Submission failed
 
 I encountered the following error when submitting the first assignment:
 
@@ -99,7 +112,7 @@ I thought I was done with no marks because I had thought I would have needed to 
 
 Many thanks to Jacob Middag who shared the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) for this issue; see the top voted answer in the hyperlink above. -> TODO: Write more about this solution.
 
-###### Update: 11 January 2016
+#### Update: 11 January 2016
 
 I found that there is another way to fix this issue above. A mentor from the Machine Learning course introduces a patch to fix the issue in the [course forum](https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog).
 
@@ -148,7 +161,7 @@ In Mac OS X, you can simply copy-drag (Option⌥ + Drag) and drop the `ML_Octave
 
 Note that this patch does exactly what the code modification in the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) above fixes, but in a slightly different manner. See the detailed explanation in each hyperlink above.
 
-#### 2.4 Visualizing J(θ)
+### 2.4 Visualizing J(θ)
 
 Assuming that you have your correct answer for the cost function `J(θ)` from 2.2.3, the objective for this section 2.4 is for you to be able to understand how to generate a surface graph and a contour graph of a cost function J(θ) – as you may have read the both instruction and code in `ex1.m`, everything you need to generate the graphs is already given (except for your answer for the cost function `J(θ)`, which you need to work out).
 
@@ -213,12 +226,13 @@ Octave Tutorial
 - Review
     - Quiz: Octave Tutorial
 
-Octave Tutorial
+\[Octave Tutorial]
 ---------------
 
-### Basic Operations
+\[Octave Tutorial] Basic Operations
+-----------------------------------
 
-#### Launch Octave by typing `octave`
+### Launch Octave by typing `octave`
 
 ```sh
 $ octave
@@ -241,7 +255,7 @@ For information about changes from previous versions, type 'news'.
 octave:1> 5+6
 ```
 
-#### Basic arithmetic operators: `+`, `-`, `*`, `/`, `^`
+### Basic arithmetic operators: `+`, `-`, `*`, `/`, `^`
 
 ```sh
 octave:1> 5+6
@@ -256,7 +270,7 @@ octave:5> 2^6
 ans =  64
 ```
 
-#### Logical operators: `==`, `~=`, `&&`, `||`, `xor(A,B)`
+### Logical operators: `==`, `~=`, `&&`, `||`, `xor(A,B)`
 
 `1` indicates true, `2` indicates false
 
@@ -273,7 +287,7 @@ octave:10> xor(1,0) % XOR, exclusive or
 ans =  1
 ```
 
-#### Prompt profile can be changed by `PS1('>> ')`, pick your style in `''`
+### Prompt profile can be changed by `PS1('>> ')`, pick your style in `''`
 
 ```sh
 octave:11> PS1('>> ');
@@ -281,7 +295,7 @@ octave:11> PS1('>> ');
 >>
 ```
 
-#### Assigning values in variables
+### Assigning values in variables
 
 ```sh
 >> a = 3
@@ -298,7 +312,7 @@ b = hi
 c =  1
 ```
 
-#### Display a value and print formatting
+### Display a value and print formatting
 
 ```sh
 >> a=pi;
@@ -320,7 +334,7 @@ a =  3.14159265358979
 a =  3.1416
 ```
 
-#### Assigning values to a Matrix
+### Assigning values to a Matrix
 
 ```sh
 >> A = [1 2; 3 4; 5 6]
@@ -425,7 +439,7 @@ w =
   -0.80322   0.59338   1.68643
 ```
 
-#### Plotting a graph
+### Plotting a graph
 
 ```sh
 >> w = -6 + sqrt(10)*(randn(1,10000))
@@ -437,7 +451,7 @@ w =
 
 ![Histogram – hist(w,50)](../images/histogram-02.png)
 
-#### Some other useful functions
+### Some other useful functions
 
 ```sh
 >> eye(4)
@@ -483,7 +497,7 @@ Diagonal Matrix
 
 ```
 
-#### `help` command
+### `help` command
 
 ```sh
 >> help eye
@@ -491,9 +505,10 @@ Diagonal Matrix
 >> help help
 ```
 
-### Moving Data Around
+\[Octave Tutorial] Moving Data Around
+-------------------------------------
 
-#### Here we have a Matrix called A
+### Here we have a Matrix called A
 
 ```sh
 >> A
@@ -512,7 +527,7 @@ A =
 
 ```
 
-#### The `size()` function returns the number of rows and columns of an object
+### The `size()` function returns the number of rows and columns of an object
 
 ```sh
 >> size(A)
@@ -536,7 +551,7 @@ ans =  3
 ans =  2
 ```
 
-#### The `length()` function returns the length of an object
+### The `length()` function returns the length of an object
 
 For Matrix objects, the length is the number of rows or columns, whichever is greater (this odd definition is used for compatibility with MATLAB).
 
@@ -563,7 +578,7 @@ ans =  3
 ans =  5
 ```
 
-#### `pwd`: print working directory, `cd path/to/dir`: change directory to `path/to/dir`
+### `pwd`: print working directory, `cd path/to/dir`: change directory to `path/to/dir`
 
 ```sh
 >> pwd
@@ -680,7 +695,7 @@ v =
 >> save hello.txt v -ascii    % save as text (ASCII)
 ```
 
-#### Display number(s) localed on the specified row and/or column
+### Display number(s) localed on the specified row and/or column
 
 ```sh
 >> A = [1 2; 3 4; 5 6]
@@ -705,7 +720,7 @@ ans =
    6
 ```
 
-#### Display numbers of more than two rows/columns of a Matrix
+### Display numbers of more than two rows/columns of a Matrix
 
 ```sh
 >> A
@@ -722,7 +737,7 @@ ans =
    5   6
 ```
 
-#### Replace numbers in the specified rows/columns of a Matrix
+### Replace numbers in the specified rows/columns of a Matrix
 
 ```sh
 >> A
@@ -747,7 +762,7 @@ A =
     5   12
 ```
 
-#### Append another column vector to right
+### Append another column vector to right
 
 ```sh
 >> A = [A, [100; 101; 102]];    % Append another column vector to right
@@ -856,9 +871,10 @@ ans =
 
 ```
 
-### Computing on Data
+\[Octave Tutorial] Computing on Data
+------------------------------------
 
-#### Matrix-Matrix Multiplication
+### Matrix-Matrix Multiplication
 
 ```sh
 >> A = [1 2; 3 4; 5 6]
@@ -942,7 +958,7 @@ ans =
    0.20000   0.16667
 ```
 
-#### `log()`, `exp()`, `abs() functions for element-wise
+### `log()`, `exp()`, `abs() functions for element-wise
 
 ```sh
 >> log(v)
@@ -995,7 +1011,7 @@ ans =
   -3
 ```
 
-#### Adding numbers to an existing Matrix object
+### Adding numbers to an existing Matrix object
 
 ```sh
 >> v
@@ -1037,7 +1053,7 @@ ans =
 
 ```
 
-#### Transpose of a Matrix with `'` quote notation
+### Transpose of a Matrix with `'` quote notation
 
 ```sh
 >> A
@@ -1061,7 +1077,7 @@ ans =
    5   6
 ```
 
-#### `max()` function returns the largest number of an object
+### `max()` function returns the largest number of an object
 
 ```sh
 >> a = [1 15 2 0.5]
@@ -1087,7 +1103,7 @@ A =
    5   6
 ```
 
-#### Element-wise boolean comparison
+### Element-wise boolean comparison
 
 ```sh
 >> a
@@ -1106,7 +1122,7 @@ ans =
    1   3   4
 ```
 
-#### Use `magic(N)` function, where `N` is a number, to create an N-by-N Matrix
+### Use `magic(N)` function, where `N` is a number, to create an N-by-N Matrix
 
 ```
 >> A = magic(3)
@@ -1137,7 +1153,7 @@ at http://www.octave.org and via the help@octave.org
 mailing list.
 ```
 
-#### Use a magic square for some mathematical operations
+### Use a magic square for some mathematical operations
 
 ```sh
 >> A = magic(3)
@@ -1188,7 +1204,7 @@ ans =
     1   15    2    1
 ```
 
-#### `rand(N)` function to generate an N-by-N Matrix
+### `rand(N)` function to generate an N-by-N Matrix
 
 ```sh
 >> rand(3)
@@ -1206,7 +1222,7 @@ ans =
    0.39026   0.92185   0.82784
 ```
 
-#### Column-wise: `1` and row-wise: `2` operations
+### Column-wise: `1` and row-wise: `2` operations
 
 ```sh
 >> A = magic(3)
@@ -1259,7 +1275,7 @@ ans =
 ans =  9
 ```
 
-#### More column-wise, row-wise operations
+### More column-wise, row-wise operations
 
 ```sh
 >> A = magic(9)
@@ -1392,7 +1408,7 @@ Permutation Matrix
    1   0   0   0   0   0   0   0   0
 ```
 
-#### `pinv()` – pseudo-inverse function
+### `pinv()` – pseudo-inverse function
 
 ```sh
 >> A = magic(3)
@@ -1425,9 +1441,10 @@ ans =
 
 ```
 
-### Plotting Data
+\[Octave Tutorial] Plotting Data
+--------------------------------
 
-#### Simple sine and cosine graphs
+### Simple sine and cosine graphs
 
 ```sh
 >> t = [0:0.01:0.98];
@@ -1442,7 +1459,7 @@ ans =
 
 ![Figure 1: plot(t,y), where t = [0:0.01:0.98] and y2 = cos(2\*pi\*4\*t))](../images/octave-tutorial-02.png)
 
-#### Plotting two lines on the same graph
+### Plotting two lines on the same graph
 
 ```sh
 >> plot(t,y1);
@@ -1457,7 +1474,7 @@ ans =
 
 ![Figure 1: my plot](../images/octave-tutorial-04.png)
 
-#### Save an image as a png file
+### Save an image as a png file
 
 As you see the picture below, I encountered an error when doing this step. Spending some time on the internet, I figured out that this was caused by **gnuplot version 5**. I had to downgrade gnuplot from version 5 to **version 4**. See the detailed description below how I managed to resolve this plot output issue.
 
@@ -1535,7 +1552,7 @@ b =  2
 c =  3
 ```
 
-#### Fix error when generating image output
+### Fix error when generating image output
 
 Along the way following Professor Ng's Octave tutorial, I encountered an error when generating an image output of a plot; see below:
 
@@ -1572,7 +1589,7 @@ Below is the successful output of my plot graph:
 - [Homebrew install specific version of formula?](http://stackoverflow.com/questions/3987683/homebrew-install-specific-version-of-formula)
 - (Japanese) [Machine Learning Week 2 - Octave Tutorial - グラフ描画](http://www.kegamin.com/entry/20151119/1447938765)
 
-#### Here is how I worked around this error
+### Here is how I worked around this error
 
 ```sh
 # You need `brew tap homebrew/versions`, you should have done by now
@@ -1695,9 +1712,10 @@ $ gnuplot --version
 gnuplot 4.6 patchlevel 6
 ```
 
-### Control Statements: for, while, if statement
+\[Octave Tutorial] Control Statements: for, while, if statement
+---------------------------------------------------------------
 
-#### The `for` Statement
+### The `for` Statement
 
 ```sh
 >> v = zeros(10, 1)
@@ -1754,7 +1772,7 @@ indices =
  10
 ```
 
-#### The `while` Statement
+### The `while` Statement
 
 ```sh
 >> v
@@ -1825,9 +1843,9 @@ ans =  999
 The value is two
 ```
 
-#### Defining functions
+### Defining functions
 
-##### Function 1: `squareThisNumber`
+#### Function 1: `squareThisNumber`
 
 Here is the given file, `squareThisNumber.m`:
 
@@ -1844,7 +1862,7 @@ Here is how you call the function:
 ans =  25
 ```
 
-##### Resolve path error
+#### Resolve path error
 
 When Octave does not recognise whatever file you are trying to execute, you need to add the path where the file is located, doing this by typing `addpath('path/to/dir')`, doing so Octave recognises the file.
 
@@ -1858,7 +1876,7 @@ ans =  25
 ans = /Users/username/go/else/where
 ```
 
-##### Function 2: `squareAndCubeThisNumber`
+#### Function 2: `squareAndCubeThisNumber`
 
 Unlike any other programming languages, like C++, Java and such, Octave can return more than two values.
 
@@ -1879,7 +1897,7 @@ a =  25
 b =  125
 ```
 
-##### Function 3: `costFunctionJ`
+#### Function 3: `costFunctionJ`
 
 Here is the given file, `costFunctionJ.m`:
 
@@ -1928,23 +1946,29 @@ j =  2.3333
 ans =  2.3333
 ```
 
-### Vectorization
+\[Octave Tutorial] Vectorization
+--------------------------------
 
 See: https://www.coursera.org/learn/machine-learning/lecture/WnQWH/vectorization
 
-### Normal Equation Noninvertibility
+TODO: TBA
+
+\[Octave Tutorial] Normal Equation Noninvertibility
+---------------------------------------------------
 
 See: https://www.coursera.org/learn/machine-learning/lecture/zSiE6/normal-equation-noninvertibility
 
-Submitting Programming Assignments
-----------------------------------
+TODO: TBA
 
-### Working on and Submitting Programming Assignments
+\[Submitting Programming Assignments] Working on and Submitting Programming Assignments
+---------------------------------------------------------------------------------------
 
 See: https://www.coursera.org/learn/machine-learning/lecture/Lt2Mx/working-on-and-submitting-programming-assignments
 
-Review
-------
+TODO: TBA
 
-### Quiz: Octave Tutorial
+\[Review] Quiz: Octave Tutorial
+-------------------------------
+
+TODO: TBA
 

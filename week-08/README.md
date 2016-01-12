@@ -39,23 +39,35 @@ Unsupervised Learning
 - Review
     - Quiz: Unsupervised Learning
 
-Clustering
-----------
+\[Clustering] Unsupervised Learning: Introduction
+-------------------------------------------------
 
-### Unsupervised Learning: Introduction
+TODO: TBA
 
-### K-Means Algorithm
+\[Clustering] K-Means Algorithm
+-------------------------------
 
-### Optimization Objective
+TODO: TBA
 
-### Random Initialization
+\[Clustering] Optimization Objective
+------------------------------------
 
-### Choosing the Number of Clusters
+TODO: TBA
 
-Review
-------
+\[Clustering] Random Initialization
+-----------------------------------
 
-### Quiz: Unsupervised Learning
+TODO: TBA
+
+\[Clustering] Choosing the Number of Clusters
+---------------------------------------------
+
+TODO: TBA
+
+\[Review] Quiz: Unsupervised Learning
+-------------------------------------
+
+TODO: TBA
 
 --------------------------------------------------------------------------------
 
@@ -76,33 +88,48 @@ Dimensionality Reduction
     - Quiz: Principal Component Analysis
     - Assignment: K-Means Clustering and PCA
 
-Motivation
-----------
+\[Motivation] Motivation I: Data Compression
+--------------------------------------------
 
-### Motivation I: Data Compression
+TODO: TBA
 
-### Motivation II: Visualization
+\[Motivation] Motivation II: Visualization
+------------------------------------------
 
-Principal Component Analysis
-----------------------------
+TODO: TBA
 
-### Principal Component Analysis Problem Formulation
+\[Principal Component Analysis] Principal Component Analysis Problem Formulation
+--------------------------------------------------------------------------------
 
-### Principal Component Analysis Algorithm
+TODO: TBA
 
-Applying PCA
-------------
+\[Principal Component Analysis] Principal Component Analysis Algorithm
+----------------------------------------------------------------------
 
-### Reconstruction from Compressed Representation
+TODO: TBA
 
-### Choosing the Number of Principal Components
+\[Applying PCA] Reconstruction from Compressed Representation
+-------------------------------------------------------------
 
-### Advice for Applying PCA
+TODO: TBA
 
-Review
-------
+\[Applying PCA] Choosing the Number of Principal Components
+-----------------------------------------------------------
 
-### Quiz: Principal Component Analysis
+TODO: TBA
 
-### Assignment: K-Means Clustering and PCA
+\[Applying PCA] Advice for Applying PCA
+---------------------------------------
+
+TODO: TBA
+
+\[Review] Quiz: Principal Component Analysis
+--------------------------------------------
+
+TODO: TBA
+
+\[Review] Assignment: K-Means Clustering and PCA
+------------------------------------------------
+
+TODO: TBA
 

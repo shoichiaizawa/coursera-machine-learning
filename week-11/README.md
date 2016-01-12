@@ -27,24 +27,33 @@ Application Example: Photo OCR
 - Conclusion
     - Summary and Thank You
 
-Photo OCR
----------
+\[Photo OCR] Problem Description and Pipeline
+---------------------------------------------
 
-### Problem Description and Pipeline
+TODO: TBA
 
-### Sliding Windows
+\[Photo OCR] Sliding Windows
+----------------------------
 
-### Getting Lots of Data and Artificial Data
+TODO: TBA
 
-### Ceiling Analysis: What Part of the Pipeline to Work on Next
+\[Photo OCR] Getting Lots of Data and Artificial Data
+-----------------------------------------------------
 
-Review
-------
+TODO: TBA
 
-### Quiz: Application: Photo OCR
+\[Photo OCR] Ceiling Analysis: What Part of the Pipeline to Work on Next
+------------------------------------------------------------------------
 
-Conclusion
-----------
+TODO: TBA
 
-### Summary and Thank You
+\[Review] Quiz: Application: Photo OCR
+--------------------------------------
+
+TODO: TBA
+
+\[Conclusion] Summary and Thank You
+-----------------------------------
+
+TODO: TBA
 

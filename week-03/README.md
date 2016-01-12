@@ -43,23 +43,33 @@ Logistic Regression
     - Quiz: Logistic Regression
     - Assignment: Logistic Regression
 
-Classification and Representation
----------------------------------
+\[Classification and Representation] Classification
+---------------------------------------------------
 
-### Classification
+TODO: TBA
 
-### Hypothesis Representation
+\[Classification and Representation] Hypothesis Representation
+--------------------------------------------------------------
 
-### Decision Boundary
+TODO: TBA
 
-Logistic Regression Model
--------------------------
+\[Classification and Representation] Decision Boundary
+------------------------------------------------------
 
-### Cost Function
+TODO: TBA
 
-### Simplified Cost Function and Gradient Descent
+\[Logistic Regression Model] Cost Function
+------------------------------------------
 
-### Advanced Optimization
+TODO: TBA
+
+\[Logistic Regression Model] Simplified Cost Function and Gradient Descent
+--------------------------------------------------------------------------
+
+TODO: TBA
+
+\[Logistic Regression Model] Advanced Optimization
+--------------------------------------------------
 
 - Optimisation algorithms:
     - [Gradient descent](https://en.wikipedia.org/wiki/Gradient_descent)
@@ -69,7 +79,7 @@ Logistic Regression Model
         - [L-BFGS](https://en.wikipedia.org/wiki/Limited-memory_BFGS)
         - etc
 
-#### Advantages and Disadvantages of these advanced algorithms:
+### Advantages and Disadvantages of these advanced algorithms:
 
 - Advantages:
     - No need to manually pick α (learning rate)
@@ -83,7 +93,7 @@ Logistic Regression Model
         - Should not be implemented yourself (unless you are an expert in numerical computing)
         - Different libraries may use different implementations – may hit performance
 
-#### Cost Function for logistic regression
+### Cost Function for logistic regression
 
 ```octave
 function [jVal, gradient] = costFunction(theta)
@@ -95,7 +105,7 @@ gradient(1) = 2*(theta(1)-5);
 gradient(2) = 2*(theta(2)-5);
 ```
 
-#### Use the `fminunc` function implement this cost function
+### Use the `fminunc` function implement this cost function
 
 `fminunc` stands for **Function Minimisation Unconstrained**
 
@@ -108,7 +118,7 @@ initialTheta = zeros(2,1)
 [optTheta, functionVal, exitFlag] = fminunc (@costFunction, initialTheta, options)
 ```
 
-#### In Octave command line
+### In Octave command line
 
 ```octave
 >> options = optimset ('GradObj', 'on', 'MaxIter', '100');
@@ -140,17 +150,20 @@ MATLAB:
 
 - [fminunc](http://uk.mathworks.com/help/optim/ug/fminunc.html)
 
-Multiclass Classification
--------------------------
+\[Multiclass Classification] Multiclass Classification: One-vs-all
+------------------------------------------------------------------
 
-### Multiclass Classification: One-vs-all
+TODO: TBA
 
-Review
-------
+\[Review] Quiz: Logistic Regression
+-----------------------------------
 
-### Quiz: Logistic Regression
+TODO: TBA
 
-### Assignment: Logistic Regression
+\[Review] Assignment: Logistic Regression
+-----------------------------------------
+
+TODO: TBA
 
 --------------------------------------------------------------------------------
 
@@ -165,19 +178,28 @@ Regularization
 - Review
     - Quiz: Regularization
 
-Solving the Problem of Overfitting
-----------------------------------
+\[Solving the Problem of Overfitting] The Problem of Overfitting
+----------------------------------------------------------------
 
-### The Problem of Overfitting
+TODO: TBA
 
-### Cost Function
+\[Solving the Problem of Overfitting] Cost Function
+---------------------------------------------------
 
-### Regularized Linear Regression
+TODO: TBA
 
-### Regularized Logistic Regression
+\[Solving the Problem of Overfitting] Regularized Linear Regression
+-------------------------------------------------------------------
 
-Review
-------
+TODO: TBA
 
-### Quiz: Regularization
+\[Solving the Problem of Overfitting] Regularized Logistic Regression
+---------------------------------------------------------------------
+
+TODO: TBA
+
+\[Review] Quiz: Regularization
+------------------------------
+
+TODO: TBA
 

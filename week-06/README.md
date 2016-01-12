@@ -46,10 +46,8 @@ Advice for Applying Machine Learning
 
 See: https://share.coursera.org/wiki/index.php/ML:Advice_for_Applying_Machine_Learning
 
-Evaluating a Learning Algorithm
--------------------------------
-
-### Deciding What to Try Next
+\[Evaluating a Learning Algorithm] Deciding What to Try Next
+------------------------------------------------------------
 
 Errors in your predictions can be troubleshooted by:
 
@@ -61,32 +59,32 @@ Errors in your predictions can be troubleshooted by:
 
 Don't just pick one of these avenues at random. We'll explore diagnostic techniques for choosing one of the above solutions in the following sections.
 
-### Evaluating a Hypothesis
+\[Evaluating a Learning Algorithm] Evaluating a Hypothesis
+----------------------------------------------------------
 
 TODO: TBA
 
-### Model Selection and Train/Validation/Test Sets
+\[Evaluating a Learning Algorithm] Model Selection and Train/Validation/Test Sets
+---------------------------------------------------------------------------------
 
 TODO: TBA
 
-Bias vs. Variance
------------------
-
-TODO: TBA
-
-### Diagnosing Bias vs. Variance
+\[Bias vs. Variance] Diagnosing Bias vs. Variance
+-------------------------------------------------
 
 TODO: TBA
 
 ![Diagnosing Bias vs. Variance](../images/features-and-polynom-degree.png)
 
-### Regularization and Bias/Variance
+\[Bias vs. Variance] Regularization and Bias/Variance
+-----------------------------------------------------
 
 TODO: TBA
 
 ![Regularization and Bias/Variance](../images/features-and-polynom-degree-fix.png)
 
-### Learning Curves
+\[Bias vs. Variance] Learning Curves
+------------------------------------
 
 TODO: TBA
 
@@ -94,7 +92,8 @@ TODO: TBA
 
 ![Typical learning curve for high variance](../images/learning-curve-high-variance.png)
 
-### Deciding What to Do Next Revisited
+\[Bias vs. Variance] Deciding What to Do Next Revisited
+-------------------------------------------------------
 
 Our decision process can be broken down as follows:
 
@@ -111,7 +110,7 @@ Our decision process can be broken down as follows:
 - Increasing λ
     - → Fixes **high variance**
 
-#### Diagnosing Neural Networks
+### Diagnosing Neural Networks
 
 - A neural network with fewer parameters is **prone to underfitting**. It is also **computationally cheaper**.
 - A large neural network with more parameters is **prone to overfitting**. It is also **computationally expensive**. In this case you can use regularization (increase λ) to address the overfitting.
@@ -120,12 +119,15 @@ Using a single hidden layer is a good stating default. You can train your neural
 
 TODO: TBA
 
-Review
-------
+\[Review] Quiz: Advice for Applying Machine Learning
+----------------------------------------------------
 
-### Quiz: Advice for Applying Machine Learning
+TODO: TBA
 
-### Assignment: Regularized Linear Regression and Bias/Variance
+\[Review] Assignment: Regularized Linear Regression and Bias/Variance
+---------------------------------------------------------------------
+
+TODO: TBA
 
 --------------------------------------------------------------------------------
 
@@ -143,10 +145,8 @@ Machine Learning System Design
 - Review
     - Quiz: Machine Learning System Design
 
-Building a Spam Classifier
---------------------------
-
-### Prioritizing What to Work On
+\[Building a Spam Classifier] Prioritizing What to Work On
+----------------------------------------------------------
 
 Different ways we can approach a machine learning problem:
 
@@ -156,7 +156,8 @@ Different ways we can approach a machine learning problem:
 
 It is difficult to tell which of the options will be helpful.
 
-### Error Analysis
+\[Building a Spam Classifier] Error Analysis
+--------------------------------------------
 
 The recommended approach to solving machine learning problems is:
 
@@ -168,10 +169,8 @@ It's more important to get error results as a single, numerical value. Otherwise
 
 You may need to process your input before it is useful. For example, if your input is a set of works, you may want to treat the same word with different forms (fail/failing/failed) as one word, so must use "[stemming](https://en.wikipedia.org/wiki/Stemming)" software (e.g. [Porter stemmer](http://tartarus.org/martin/PorterStemmer/)) to recognise them all as one.
 
-Handling Skewed Data
---------------------
-
-### Error Metrics for Skewed Classes
+\[Handling Skewed Data] Error Metrics for Skewed Classes
+--------------------------------------------------------
 
 It is sometimes difficult to tell whether a reduction in error is actually an improvement of the algorithm.
 
@@ -219,7 +218,8 @@ Note 1: if an algorithm predicts only negatives like it does in one of exercises
 Note 2: a manual calculation of precision and other functions is an error prone process. It is very easy through to create an Excel file for this. Put into it a table `2*2` for all necessary input values, label them like "`TruePositives`", "`FalsePositives`", and on other cells of Exel add formulas like `=SUM(TruePositive, FalsePositive, TrueNegative, FalseNegative)`, label this one `AllExamples`. Then on another cell label `Accuracy` and a formula:
 `=SUM(TruePositive,TrueNegative)/AllExamples`. The same with others. After 10 minutes you will have a spreadsheet for all examples and questions. [Snap shot https://share.coursera.org/wiki/index.php/File:Spreadsheetquiz6.GIF]
 
-### Trading Off Precision and Recall
+\[Handling Skewed Data] Trading Off Precision and Recall
+--------------------------------------------------------
 
 We might want a **confident** prediction of two classes using logistic regression. One way is to increase our threshold:
 
@@ -266,10 +266,8 @@ In order for the F Score to be large, both precision and recall must be large.
 
 We want to train precision and recall on the **cross validation set** so as not to bias out test set.
 
-Using Large Data Sets
----------------------
-
-### Data For Machine Learning
+\[Using Large Data Sets] Data For Machine Learning
+--------------------------------------------------
 
 How much data should we train on?
 
@@ -279,12 +277,10 @@ We must choose our features to have **enough** information. A useful test is: Gi
 
 **Rationale for large data**: if we have **low bias** algorithm (many features or hidden units making a very complex function), then the larger the training set we use, the less we will have overfitting (and the more accurate the algorithm will be on the test set).
 
-Review
-------
+\[Review] Quiz: Machine Learning System Design
+----------------------------------------------
 
-### Quiz: Machine Learning System Design
-
-#### Quiz instructions
+### Quiz instructions
 
 When the quiz instructions tell you to enter a value to "two decimal digits", what it really means is "two significant digits". So, just for example, the value `0.0123` should be entered as "`0.012`", not "`0.01`".
 

@@ -37,30 +37,43 @@ Neural Networks: Learning
     - Quiz: Neural Networks: Learning
     - Assignment: Neural Network Learning
 
-Cost Function and Backpropagation
----------------------------------
+\[Cost Function and Backpropagation] Cost Function
+--------------------------------------------------
 
-### Cost Function
+TODO: TBA
 
-### Backpropagation Algorithm
+\[Cost Function and Backpropagation] Backpropagation Algorithm
+--------------------------------------------------------------
 
-### Backpropagation Intuition
+TODO: TBA
 
-Backpropagation in Practice
----------------------------
+\[Cost Function and Backpropagation] Backpropagation Intuition
+--------------------------------------------------------------
 
-### Implementation Note: Unrolling Parameters
+TODO: TBA
 
-### Gradient Checking
+\[Backpropagation in Practice] Implementation Note: Unrolling Parameters
+------------------------------------------------------------------------
 
-### Random Initialization
+TODO: TBA
 
-### Putting It Together
+\[Backpropagation in Practice] Gradient Checking
+------------------------------------------------
 
-Application of Neural Networks
-------------------------------
+TODO: TBA
 
-### Autonomous Driving
+\[Backpropagation in Practice] Random Initialization
+----------------------------------------------------
+
+TODO: TBA
+
+\[Backpropagation in Practice] Putting It Together
+--------------------------------------------------
+
+TODO: TBA
+
+\[Application of Neural Networks] Autonomous Driving
+----------------------------------------------------
 
 ![On July 23, 1995, research scientist Dean Pomerleau and Ph.D. student Todd Jochem from Carnegie Mellon University’s Robotics Institute](http://www.roboticstrends.com/images/wide/nohandsamericawide.jpg)
 
@@ -70,10 +83,13 @@ Application of Neural Networks
 - [Back to the Future: Autonomous Driving in 1995](http://www.roboticstrends.com/article/back_to_the_future_autonomous_driving_in_1995) -- An interesting reading from Robotics Trends released in 2015, 20 years after the introduction of Autonomous Driving
 - [Neural Network-Based Autonomous Driving](https://www.youtube.com/watch?v=ilP4aPDTBPE) -- A video introduced in the Coursera lecture video
 
-Review
-------
+\[Review] Quiz: Neural Networks: Learning
+-----------------------------------------
 
-### Quiz: Neural Networks: Learning
+TODO: TBA
 
-### Assignment: Neural Network Learning
+\[Review] Assignment: Neural Network Learning
+---------------------------------------------
+
+TODO: TBA
 

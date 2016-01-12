@@ -29,26 +29,38 @@ Large Scale Machine Learning
 - Review
     - Quiz: Large Scale Machine Learning
 
-Gradient Descent with Large Datasets
-------------------------------------
+\[Gradient Descent with Large Datasets] Learning With Large Datasets
+--------------------------------------------------------------------
 
-### Learning With Large Datasets
+TODO: TBA
 
-### Stochastic Gradient Descent
+\[Gradient Descent with Large Datasets] Stochastic Gradient Descent
+-------------------------------------------------------------------
 
-### Mini-Batch Gradient Descent
+TODO: TBA
 
-### Stochastic Gradient Descent Convergence
+\[Gradient Descent with Large Datasets] Mini-Batch Gradient Descent
+-------------------------------------------------------------------
 
-Advanced Topics
----------------
+TODO: TBA
 
-### Online Learning
+\[Gradient Descent with Large Datasets] Stochastic Gradient Descent Convergence
+-------------------------------------------------------------------------------
 
-### Map Reduce and Data Parallelism
+TODO: TBA
 
-Review
-------
+\[Advanced Topics] Online Learning
+----------------------------------
 
-### Quiz: Large Scale Machine Learning
+TODO: TBA
+
+\[Advanced Topics] Map Reduce and Data Parallelism
+--------------------------------------------------
+
+TODO: TBA
+
+\[Review] Quiz: Large Scale Machine Learning
+--------------------------------------------
+
+TODO: TBA
 

@@ -33,31 +33,43 @@ Support Vector Machines
     - Quiz: Support Vector Machines
     - Assignment: Support Vector Machines3h 00m
 
-Large Margin Classification
----------------------------
+\[Large Margin Classification] Optimization Objective
+-----------------------------------------------------
 
-### Optimization Objective
+TODO: TBA
 
-### Large Margin Intuition
+\[Large Margin Classification] Large Margin Intuition
+-----------------------------------------------------
 
-### Mathematics Behind Large Margin Classification
+TODO: TBA
 
-Kernels
--------
+\[Large Margin Classification] Mathematics Behind Large Margin Classification
+-----------------------------------------------------------------------------
 
-### Kernels I
+TODO: TBA
 
-### Kernels II
+\[Kernels] Kernels I
+--------------------
 
-SVMs in Practice
-----------------
+TODO: TBA
 
-### Using An SVM
+\[Kernels] Kernels II
+---------------------
 
-Review
-------
+TODO: TBA
 
-### Quiz: Support Vector Machines
+\[SVMs in Practice] Using An SVM
+--------------------------------
 
-### Assignment: Support Vector Machines3h 00m
+TODO: TBA
+
+\[Review] Quiz: Support Vector Machines
+---------------------------------------
+
+TODO: TBA
+
+\[Review] Assignment: Support Vector Machines3h 00m
+---------------------------------------------------
+
+TODO: TBA
 

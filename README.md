@@ -7,7 +7,7 @@ Machine Learning - Stanford University, instructed by Andrew Ng
 
 This is my other note repository for [Machine Learning - Stanford University](https://www.coursera.org/learn/machine-learning) course offered at [Coursera.org](https://www.coursera.org/). The notes are currently being used for the session between **2015-11-30** and **2016-02-22**.
 
-At this time, the notes are very disorganised, as in the large part of the text is very exact copy (but typed by me) of the original one given by Professor Ng and other Coursera community members – I will try to summarise the notes as much as possible whenever I can.
+At this time, the notes are very disorganised, as the large part of the text is very exact copy (but typed by me) of the original one given by Professor Ng and other Coursera community members – I will try to summarise the notes as much as possible whenever I can for my future reference.
 
 ### My objective for this course
 
@@ -17,7 +17,7 @@ My goal after completing this course is, likewise other learners I came across o
 
 ### Terms of Use for Coursera.org
 
-Please note that there is no assignment related file is stored within this repository; they are in my local computer but excluded with the `.gitignore` file.
+Please note that there is no assignment related file is stored within this repository; they are in my local computer but excluded by the `.gitignore` file.
 
 I am believing that what I do in this repository is legit, however, that said, I would be grateful to anyone kindly enough to point me out any of my possible infringement of the [Honour Code](https://www.coursera.org/about/terms/honorcode) OR the other [Terms of Use](https://www.coursera.org/about/terms) at Coursera.org. In such cases, I will make an immediate action on those files.
 

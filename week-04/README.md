@@ -35,26 +35,33 @@ Neural Networks: Representation
     - Quiz: Neural Networks: Representation
     - Assignment: Multi-class Classification and Neural Networks
 
-Motivations
------------
+\[Motivations] Non-linear Hypotheses
+------------------------------------
 
-### Non-linear Hypotheses
+TODO: TBA
 
-### Neurons and the Brain
+\[Motivations] Neurons and the Brain
+------------------------------------
 
-Neural Networks
----------------
+TODO: TBA
 
-### Model Representation I
+\[Neural Networks] Model Representation I
+-----------------------------------------
 
-### Model Representation II
+TODO: TBA
 
-Applications
-------------
+\[Neural Networks] Model Representation II
+------------------------------------------
 
-### Model Representation I
+TODO: TBA
 
-### Examples and Intuitions II
+\[Applications] Model Representation I
+--------------------------------------
+
+TODO: TBA
+
+\[Applications] Examples and Intuitions II
+------------------------------------------
 
 - [LeNet-5, convolutional neural networks](http://yann.lecun.com/exdb/lenet/)
 
@@ -66,10 +73,13 @@ Applications
 
 - [Convolutional neural network (Wikipedia)](https://en.wikipedia.org/wiki/Convolutional_neural_network)
 
-Review
-------
+\[Review] Quiz: Neural Networks: Representation
+-----------------------------------------------
 
-### Quiz: Neural Networks: Representation
+TODO: TBA
 
-### Assignment: Multi-class Classification and Neural Networks
+\[Review] Assignment: Multi-class Classification and Neural Networks
+--------------------------------------------------------------------
+
+TODO: TBA
 
