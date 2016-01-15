@@ -105,14 +105,40 @@ I encountered the following error when submitting the first assignment:
 !! Please try again later.
 ```
 
-This is said to be that the conversion from ASCII to the hexadecimal escape JSONLab uses is not working properly anymore in Octave 4.0.0.
+#### Solution 1
 
 I encountered this error only a few hours before the deadline at **23:59 December 13, 2015**.
 I thought I was done with no marks because I had thought I would have needed to spend much time to resolve this issue.
 
-Many thanks to Jacob Middag who shared the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) for this issue; see the top voted answer in the hyperlink above. -> TODO: Write more about this solution.
+Many thanks to Jacob Middag who shared the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) for this issue. According to him, the conversion from ASCII to the hexadecimal escape JSONLab uses is not working properly anymore in Octave 4.0.0.
 
-#### Update: 11 January 2016
+To work around the issue, you need to replace:
+
+```octave
+str=sprintf('x0x%X_%s',char(str(1)),str(2:end));
+```
+
+by
+
+```octave
+str=sprintf('x0x%X_%s',toascii(str(1)),str(2:end));
+```
+
+, and
+
+```octave
+str=[str str0(pos0(i)+1:pos(i)-1) sprintf('_0x%X_',str0(pos(i)))];
+```
+
+by
+
+```octave
+str=[str str0(pos0(i)+1:pos(i)-1) sprintf('_0x%X_',toascii(str0(pos(i))))];
+```
+
+in both the `lib/makeValidFieldName.m` and `lib/jsonlab/loadjson.m` files.
+
+#### Solution 2 (Update: 11 January 2016)
 
 I found that there is another way to fix this issue above. A mentor from the Machine Learning course introduces a patch to fix the issue in the [course forum](https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog).
 
