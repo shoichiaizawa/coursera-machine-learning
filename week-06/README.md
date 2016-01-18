@@ -74,23 +74,23 @@ TODO: TBA
 
 TODO: TBA
 
-![Diagnosing Bias vs. Variance](../images/features-and-polynom-degree.png)
+![Diagnosing Bias vs. Variance](../images/week-06-features-and-polynom-degree.png)
 
 \[Bias vs. Variance] Regularization and Bias/Variance
 -----------------------------------------------------
 
 TODO: TBA
 
-![Regularization and Bias/Variance](../images/features-and-polynom-degree-fix.png)
+![Regularization and Bias/Variance](../images/week-06-features-and-polynom-degree-fix.png)
 
 \[Bias vs. Variance] Learning Curves
 ------------------------------------
 
 TODO: TBA
 
-![Typical learning curve for high bias](../images/learning-curve-high-bias.png)
+![Typical learning curve for high bias](../images/week-06-learning-curve-high-bias.png)
 
-![Typical learning curve for high variance](../images/learning-curve-high-variance.png)
+![Typical learning curve for high variance](../images/week-06-learning-curve-high-variance.png)
 
 \[Bias vs. Variance] Deciding What to Do Next Revisited
 -------------------------------------------------------
