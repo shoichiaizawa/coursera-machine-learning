@@ -1512,12 +1512,12 @@ warning: called from
     __print_parse_opts__ at line 385 column 9
     print at line 288 column 8
 >> help plot
->> close
 ```
 
-![Filed output of my plot graph](../images/week-02-myPlot-failed.png)
+![Filed output of my plot graph](../images/week-02-myPlot-gnuplot5-failed.png)
 
 ```sh
+>> close
 >> figure(1); plot(t,y1);
 >> figure(2); plot(t,y2);
 ```
@@ -1594,7 +1594,7 @@ Along the way following Professor Ng's Octave tutorial, I encountered an error w
 
 And `myFile.png` was generated with a solid black image on the grid as below:
 
-![Filed output of my plot graph](../images/week-02-myPlot-failed.png)
+![Filed output of my plot graph](../images/week-02-myPlot-gnuplot5-failed.png)
 
 This is said to be caused by gnuplot 5. I had to downgrade to gnuplot 4 to resolve this issue.
 After downgrading `gnuplot` from `5.0.1` to `4.6.6`, the `print` command outputs the plot successfully:
@@ -1606,7 +1606,7 @@ After downgrading `gnuplot` from `5.0.1` to `4.6.6`, the `print` command outputs
 
 Below is the successful output of my plot graph:
 
-![Successful output of my plot graph](../images/week-02-myPlot.png)
+![Successful output of my plot graph](../images/week-02-myPlot-gnuplot4-succeeded.png)
 
 ##### References:
 
