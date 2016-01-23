@@ -138,7 +138,7 @@ str=[str str0(pos0(i)+1:pos(i)-1) sprintf('_0x%X_',toascii(str0(pos(i))))];
 
 in both the `lib/makeValidFieldName.m` and `lib/jsonlab/loadjson.m` files.
 
-#### Solution 2 (Update: 11 January 2016)
+#### Solution 2 (Update: 2016-01-11)
 
 I found that there is another way to fix this issue above. A mentor from the Machine Learning course introduces a patch to fix the issue in the [course forum](https://www.coursera.org/learn/machine-learning/discussions/vgCyrQoMEeWv5yIAC00Eog).
 
@@ -188,6 +188,8 @@ In Mac OS X, you can simply copy-drag (Option⌥ + Drag) and drop the `ML_Octave
 Note that this patch does exactly what the code modification in the [solution](https://learner.coursera.help/hc/en-us/community/posts/204693179-linear-regression-submit-error?sort_by=votes) above fixes, but in a slightly different manner. See the detailed explanation in each hyperlink above.
 
 ### 2.4 Visualizing J(θ)
+
+**[Update: 2016-01-23]** This is only an issue when running the `ex1.m` assignment starter code from your shell, i.e. `octave ex1.m` in Bash, Zsh or else. This is not an issue if you run the starter code <u>within the Octave command line</u> (as firstly enter to the Octave command line by typing `octave` and then inside the Octave command line type `ex1` to run the starter code).
 
 Assuming that you have your correct answer for the cost function `J(θ)` from 2.2.3, the objective for this section 2.4 is for you to be able to understand how to generate a surface graph and a contour graph of a cost function J(θ) – as you may have read the both instruction and code in `ex1.m`, everything you need to generate the graphs is already given (except for your answer for the cost function `J(θ)`, which you need to work out).
 
