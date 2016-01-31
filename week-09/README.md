@@ -51,7 +51,20 @@ Anomaly Detection
 \[Density Estimation] Problem Motivation
 ----------------------------------------
 
-TODO: TBA
+Just like in other learning algorithms, we are giving a dataset <i>x<sup>(1)</sup>, x<sup>(2)</sup>, ..., x<sup>(m)</sup></i>.
+
+We are then giving a new example, <i>x<sub>test</sub></i>, and we want to know whether this new example is abnormal/anomalous.
+
+We define a "model" *p(x)* that tells us the probability the examples is not anomalous. We also use a threshold *ε* (epsilon) as a dividing line so we can say which examples are anomalous and which are not.
+
+A very common application of anomaly detection is detecting fraud:
+
+- <i>x<sup>(i)</sup></i> = features of user *i*'s activities
+- Model *p(x)* from the data.
+- Identify unusual users by checking
+- which have *p(x) < ε*.
+
+If out anomaly detector is flagging **too many** anomalous examples, then we need to **decrease** our threshold *ε*.
 
 \[Density Estimation] Gaussian Distribution
 -------------------------------------------
@@ -71,12 +84,42 @@ TODO: TBA
 \[Building an Anomaly Detection System] Anomaly Detection vs. Supervised Learning
 ---------------------------------------------------------------------------------
 
-TODO: TBA
+When do we use anomaly detection and when do we use supervised learning?
+
+Use anomaly detection when...
+
+- We have a very small number of positive examples (*y = 1* ... 0-20 example is common) and a large number of negative (*y = 0*) examples.
+- We have many different "types" of anomalies and it is hard for any algorithm to learn from positive examples what the anomalies look like; future anomalies may look nothing like any of the anomalous examples we've seen so far.
+
+Use supervised learning when...
+
+- We have a large number of both positive and negative examples. In other words, the training set is more evenly divided into classes.
+- We have enough positive examples for the algorithm to get a sense of what new positives examples look like. The future positive examples are likely similar to the ones in the training set.
 
 \[Building an Anomaly Detection System] Choosing What Features to Use
 ---------------------------------------------------------------------
 
-TODO: TBA
+The features will greatly affect how well your anomaly detection algorithm works.
+
+We can check that out features are **gaussian** by plotting a histogram of out data and checking for the bell-shaped curve.
+
+Some **transforms** we can try on an example feature *x* that does not have the bell-shaped curve are:
+
+- <i>log(x)</i>
+- <i>log(x + 1)</i>
+- <i>log(x + c)</i> for some constant
+- <i>√x</i>
+- <i>x<sup>1/3</sup></i>
+
+We can play with each of these to try and achieve the gaussian shape in our data.
+
+There is an **error analysis procedure** for anomaly detection that is very similar to the one in supervised learning.
+
+Our goal is for *p(x)* to be large for normal examples and small for anomalous examples.
+
+One common problem is when *p(x)* is similar for both types of examples. In this case, you need to examine the anomalous examples that are giving high probability in detail and try to figure out new features that will better distinguish the data.
+
+In general, choose features that might take on usually large or small values in the event of an anomaly.
 
 \[Multivariate Gaussian Distribution (Optional)] Multivariate Gaussian Distribution
 -----------------------------------------------------------------------------------
@@ -114,7 +157,14 @@ Recommender Systems
 \[Predicting Movie Ratings] Problem Formulation
 -----------------------------------------------
 
-TODO: TBA
+Recommendation is currently a very popular application of machine learning.
+
+Say we are trying to recommend movies to customers. We can use the following definitions:
+
+- <i>n<sub>u</sub></i> = number of users
+- <i>n<sub>m</sub></i> = number of movies
+- <i>r(i, j)<sub>m</sub></i> = 1 if user <i>j</i> has rated movie <i>i</i>
+- <i>y(i, j)<sub>m</sub></i> = rating given by user <i>j</i> to movie <i>i</i> (defined only if <i>r(i, j)<sub>m</sub></i> = 1)
 
 \[Predicting Movie Ratings] Content Based Recommendations
 ---------------------------------------------------------
