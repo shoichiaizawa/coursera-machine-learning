@@ -199,5 +199,39 @@ TODO: TBA
 \[Review] Assignment: Anomaly Detection and Recommender Systems
 ---------------------------------------------------------------
 
-TODO: TBA
+### An error in `ex8_cofi.m`
+
+There is one error in the second part of Week 9 assignment starter code, `ex8_cofi.m`, for the Recommender Systems questions. A course mentor answered in [a course discussion forum thread](https://www.coursera.org/learn/machine-learning/discussions/YI_8-NrxEeSIcSIAC0EU3g) is that this is a typographical error for a variable used for `fmincg()` and `cofiCostFunc()`. In the original `ex8_cofi.m` file, the second variable in `cofiCostFunc()` is `Y`, but this has to be `Ynorm` instead. Because prior to the function call, we perform normalization on `Y`, creating `Ynorm`, but it is never used. This error does not halt Octave in the middle of its execution, but this error can cause the predicting rating values obtained for the top movie recommendations to be greater than 5, instead they are to be rated between 0 and 10.
+
+Here is the relevant text extract from the [Errata section of the Course Wiki](https://share.coursera.org/wiki/index.php/ML:Errata:_Week_9):
+
+> In ex8_cofi.m at line 199, where theta is trained using fmincg() for the movie ratings, the use of "Y" in the function call should be "<u><b>Ynorm</b></u>". Y is normalized in line 181, creating <u><b>Ynorm</b></u>, but then it is never used. The video lecture "Implementation Detail: Mean Normalization" at 5:34 makes it pretty clear that the normalized Y matrix should be used for calculating theta.
+
+#### Solution
+
+As explained in the text extract above, the second variable of `cofiCostFunc()` in `ex8_cofi.m` needs to be replaced from `Y` to `Ynorm`.
+
+Replace the second variable at line 199 in `ex8_cofi.m` from:
+
+```octave
+theta = fmincg (@(t)(cofiCostFunc(t, Y, R, num_users, num_movies, ...
+                                num_features, lambda)), ...
+                initial_parameters, options);
+```
+
+, to:
+
+
+```octave
+theta = fmincg (@(t)(cofiCostFunc(t, Ynorm, R, num_users, num_movies, ...
+                                num_features, lambda)), ...
+                initial_parameters, options);
+```
+
+With this fix, the movie rating values are correctly shown.
+
+##### References
+
+- [Mean Normalization: Why are predictions higher than maximum possible rating?](https://www.coursera.org/learn/machine-learning/discussions/YI_8-NrxEeSIcSIAC0EU3g) -- Machine Learning Course Discussion Forums
+- [ML:Errata: Week 9](https://share.coursera.org/wiki/index.php/ML:Errata:_Week_9) -- Machine Learning Course Wiki
 
