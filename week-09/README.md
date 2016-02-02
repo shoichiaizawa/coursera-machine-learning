@@ -201,7 +201,27 @@ TODO: TBA
 
 ### An error in `ex8_cofi.m`
 
-There is one error in the second part of Week 9 assignment starter code, `ex8_cofi.m`, for the Recommender Systems questions. A course mentor answered in [a course discussion forum thread](https://www.coursera.org/learn/machine-learning/discussions/YI_8-NrxEeSIcSIAC0EU3g) is that this is a typographical error for a variable used for `fmincg()` and `cofiCostFunc()`. In the original `ex8_cofi.m` file, the second variable in `cofiCostFunc()` is `Y`, but this has to be `Ynorm` instead. Because prior to the function call, we perform normalization on `Y`, creating `Ynorm`, but it is never used. This error does not halt Octave in the middle of its execution, but this error can cause the predicting rating values obtained for the top movie recommendations to be greater than 5, instead they are to be rated between 0 and 10.
+There is one error in the second part of Week 9 assignment starter code, `ex8_cofi.m`, which is used for the Recommender Systems questions.
+
+A course mentor answered in [a course discussion forum thread](https://www.coursera.org/learn/machine-learning/discussions/YI_8-NrxEeSIcSIAC0EU3g) is that this is just a typographical error for a variable used for `fmincg()` and `cofiCostFunc()`.
+
+In the given original `ex8_cofi.m` file, the second variable in `cofiCostFunc()` is `Y`, but this has to be `Ynorm` instead. Because prior to the function call, we perform normalization on `Y`, creating `Ynorm`, but this normalized Y variable `Ynorm` is never used, and instead proceed to learn our parameters Theta and X based on the original non-normalized Y.
+
+This error does not halt Octave in the middle of its execution, but it can cause the predicting rating values obtained for the top movie recommendations to be between 0 and 10, the rating values should not be greater than 5; see below the erroneous values obtained due to non-normalized Y:
+
+```
+Top recommendations for you:
+Predicting rating 8.5 for movie Titanic (1997)
+Predicting rating 8.5 for movie Star Wars (1977)
+Predicting rating 8.3 for movie Shawshank Redemption, The (1994)
+Predicting rating 8.2 for movie Raiders of the Lost Ark (1981)
+Predicting rating 8.2 for movie Schindler's List (1993)
+Predicting rating 8.2 for movie Good Will Hunting (1997)
+Predicting rating 8.1 for movie Usual Suspects, The (1995)
+Predicting rating 8.0 for movie Empire Strikes Back, The (1980)
+Predicting rating 8.0 for movie Braveheart (1995)
+Predicting rating 8.0 for movie Godfather, The (1972)
+```
 
 Here is the relevant text extract from the [Errata section of the Course Wiki](https://share.coursera.org/wiki/index.php/ML:Errata:_Week_9):
 
@@ -228,7 +248,21 @@ theta = fmincg (@(t)(cofiCostFunc(t, Ynorm, R, num_users, num_movies, ...
                 initial_parameters, options);
 ```
 
-With this fix, the movie rating values are correctly shown.
+With this fix, the movie rating values are shown in the correct range between 1 and 5:
+
+```
+Top recommendations for you:
+Predicting rating 5.0 for movie Saint of Fort Washington, The (1993)
+Predicting rating 5.0 for movie Prefontaine (1997)
+Predicting rating 5.0 for movie Star Kid (1997)
+Predicting rating 5.0 for movie Someone Else's America (1995)
+Predicting rating 5.0 for movie Marlene Dietrich: Shadow and Light (1996)
+Predicting rating 5.0 for movie Aiqing wansui (1994)
+Predicting rating 5.0 for movie They Made Me a Criminal (1939)
+Predicting rating 5.0 for movie Santa with Muscles (1996)
+Predicting rating 5.0 for movie Great Day in Harlem, A (1994)
+Predicting rating 5.0 for movie Entertaining Angels: The Dorothy Day Story (1996)
+```
 
 ##### References
 
